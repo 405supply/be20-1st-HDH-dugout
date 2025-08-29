@@ -235,6 +235,7 @@ CREATE TABLE `follow` (
     `followed_id` INT NOT NULL,
     `created_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
     `is_deleted` BOOLEAN NULL DEFAULT FALSE,
+    CONSTRAINT `unique_following_followed` UNIQUE(`following_id`, `followed_id`),
     PRIMARY KEY (`follow_id`)
 );
 
