@@ -52,7 +52,7 @@ SELECT comment_ref
        ) c ON c.comment_id =  a.comment_id
 -- WHERE a.comment_ref NOT LIKE '%_0'
 ORDER BY CAST(SUBSTRING_INDEX(a.comment_ref, '_', 1) AS UNSIGNED)
-,CAST(SUBSTRING_INDEX(a.comment_ref, '_', -1) AS UNSIGNED);
+,CAST(SUBSTRING_INDEX(a.comment_ref, '_', -1) AS UNSIGNED);player_comment
 
 -- 댓글 수정
 UPDATE comment
