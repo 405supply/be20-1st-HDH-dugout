@@ -55,11 +55,12 @@ CREATE PROCEDURE user_login_check(
     IN p_login_pw VARCHAR(255)
 )
 BEGIN
-    SELECT COUNT(1) AS login_success
+    SELECT COUNT(1) AS '로그인 성공'
       FROM `user`
      WHERE login_id = p_login_id
        AND login_pw = p_login_pw
-       AND is_deleted = FALSE;
+       AND is_deleted = FALSE
+       AND ( suspension_end < CURRENT_TIMESTAMP OR suspension_end IS NULL );		-- 정지 회원인지 판별
 END //
 
 -- =====================================================
@@ -126,7 +127,6 @@ END //
 
 -- =====================================================
 -- 다른 회원 차단 (blocker -> blocked)
--- (유니크키 (blocker_id, blocked_id) 있으면 중복 방지/부활 처리 가능)
 -- =====================================================
 CREATE PROCEDURE user_block_add(
     IN p_blocker_id INT,
@@ -163,7 +163,6 @@ END //
 
 -- =====================================================
 -- 마이페이지 - 본인 게시글 조회
--- !! 친구 찾기 게시글 엔티티 최종완료 후 수정 필요 !!
 -- =====================================================
 CREATE PROCEDURE mypage_posts_by_user(IN p_user_id INT)
 BEGIN
@@ -200,7 +199,6 @@ END;
 
 -- =====================================================
 -- 마이페이지 - 본인 댓글 조회
--- !! 친구 찾기 댓글 엔티티, 선수 평가 댓글 엔티티 최종완료 후 수정 필요 !!
 -- =====================================================
 CREATE PROCEDURE mypage_comments_by_user(IN p_user_id INT)
 BEGIN
