@@ -44,15 +44,20 @@ CREATE TABLE `category` (
 
 DROP TABLE IF EXISTS `board_report`;
 CREATE TABLE `board_report` (
-    `board_report_id` INT NOT NULL AUTO_INCREMENT,
-    `user_id` INT NOT NULL,
-    `board_id` INT NOT NULL,
-    `reason` TEXT NULL DEFAULT NULL,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `is_handled` BOOLEAN NOT NULL DEFAULT FALSE,
-    CONSTRAINT unique_report_board UNIQUE(user_id, board_id),
-    PRIMARY KEY (`board_report_id`)
-);
+  `board_report_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `board_id` INT NULL,
+  `friend_board_id` INT NULL,
+  `reason` TEXT NULL DEFAULT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_handled` TINYINT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`board_report_id`),
+  UNIQUE KEY `unique_report_board` (`user_id`, `board_id`),
+  UNIQUE KEY `unique_report_friend_board` (`user_id`, `friend_board_id`),
+  CONSTRAINT `chk_only_one_target`
+    CHECK ( (`board_id` IS NULL) <> (`friend_board_id` IS NULL) )
+) 
+;
 
 DROP TABLE IF EXISTS `player_comment`;
 CREATE TABLE `player_comment` (
@@ -225,6 +230,7 @@ CREATE TABLE `user` (
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- 자동 갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
+    `suspension_end` DATETIME NULL DEFAULT NULL,
     PRIMARY KEY (`user_id`),
     UNIQUE KEY `uk_user_login_id` (`login_id`),  -- 아이디 고유
     UNIQUE KEY `uk_user_email`    (`email`)      -- 이메일 고유
@@ -285,14 +291,18 @@ CREATE TABLE `board_recommend` (
 
 DROP TABLE IF EXISTS `comment_report`;
 CREATE TABLE `comment_report` (
-    `comment_report_id` INT NOT NULL AUTO_INCREMENT,
-    `user_id` INT NOT NULL,
-    `comment_id` INT NOT NULL,
-    `reason` TEXT NULL DEFAULT NULL,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `is_handled` BOOLEAN NOT NULL DEFAULT FALSE,
-    CONSTRAINT unique_report_comment UNIQUE(user_id, comment_id),
-    PRIMARY KEY (`comment_report_id`)
+  `comment_report_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id`           INT NOT NULL,
+  `comment_id`        INT NULL,
+  `friend_comment_id` INT NULL,
+  `reason`            TEXT NULL DEFAULT NULL,
+  `created_at`        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_handled`        TINYINT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`comment_report_id`),
+  UNIQUE KEY `unique_report_comment`       (`user_id`, `comment_id`),
+  UNIQUE KEY `unique_report_friend_comment`(`user_id`, `friend_comment_id`),
+  CONSTRAINT `chk_only_one_target`
+    CHECK ( (comment_id IS NULL) <> (friend_comment_id IS NULL) )
 );
 
 DROP TABLE IF EXISTS `admin`;
@@ -367,3 +377,5 @@ ALTER TABLE `comment_report` ADD CONSTRAINT `FK_comment_TO_comment_report_1` FOR
 ALTER TABLE `comment` ADD CONSTRAINT `FK_board_TO_comment_1` FOREIGN KEY (`board_id`) REFERENCES `board`(`board_id`);
 ALTER TABLE `comment` ADD CONSTRAINT `FK_comment_TO_comment_1` FOREIGN KEY (`parent_comment_id`) REFERENCES `comment`(`comment_id`);
 ALTER TABLE `comment` ADD CONSTRAINT `FK_user_TO_comment_1` FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`);
+ALTER TABLE `board_report` ADD CONSTRAINT `FK_board_report_friend_board` FOREIGN KEY (`friend_board_id`) REFERENCES friend_board (`board_id`) ON UPDATE RESTRICT ON DELETE RESTRICT;
+ALTER TABLE `comment_report` ADD CONSTRAINT `FK_comment_report_friend_comment` FOREIGN KEY (`friend_comment_id`) REFERENCES `friend_comment` (`comment_id`) ON UPDATE RESTRICT ON DELETE RESTRICT;
