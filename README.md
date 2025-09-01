@@ -1,6 +1,6 @@
 # ⚾Dugout
 Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼으로, 팬들이 소통하고 다양한 콘텐츠를 즐길 수 있는 공간을 제공합니다.
-![alt text](image-14.png)
+![alt text](image.png)
 
 ## 👥 1. 팀원소개 
 [김동리](https://www.notion.so/2582e9a3290281389afdeff8428fdc98?source=copy_link)   
@@ -44,38 +44,38 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 📌 개발 환경
 * DBMS   
-![alt text](image-5.png)
+![alt text](image-1.png)
 
 * DB 관리 도구   
-![alt text](image-6.png)
+![alt text](image-2.png)
 
 * 가상화 환경   
-![alt text](image-7.png)
+![alt text](image-3.png)
 
 
 📌 협업 및 관리 도구
 
 * 협업 도구   
-![alt text](image-8.png)![alt text](image-9.png)
+![alt text](image-4.png)![alt text](image-5.png)
  
 
 * 버전 및 이슈 관리   
-![alt text](image-10.png)
+![alt text](image-6.png)
 
 * 데이터 관리   
-![alt text](image-11.png)
+![alt text](image-7.png)
 
 📌 ERD 및 다이어그램 도구
 
 * ERD 및 다이어그램 도구   
- ![alt text](image-12.png)![alt text](image-13.png)
+![alt text](image-8.png)![alt text](image-9.png)
 
 ## 🧢 5. 프로젝트 산출물
 ### 1. WBS
 <details>
   <summary>WBS 이미지</summary>
 
-  ![alt text](image-1.png)
+![alt text](image-11.png)
 
 </details>
 
@@ -84,7 +84,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>요구사항 명세서 이미지</summary>
 
-  ![alt text](image-2.png)
+![alt text](image-12.png)
 
 </details>
 
@@ -93,7 +93,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>다이어그램 이미지</summary>
 
- ![alt text](image-3.png)
+![alt text](image-13.png)
 
 </details>
 
@@ -102,7 +102,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>ERD 이미지</summary>
 
-![alt text](image-4.png)
+![alt text](image-14.png)
 
 </details>
 
