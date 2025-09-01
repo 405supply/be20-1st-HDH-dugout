@@ -1,6 +1,7 @@
 # ⚾Dugout
 Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼으로, 팬들이 소통하고 다양한 콘텐츠를 즐길 수 있는 공간을 제공합니다.
-![alt text](image.png)
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/c9c67e7e-54f7-46ba-a84e-e591b1d50bb5" />
+
 
 ## 👥 1. 팀원소개 
 [김동리](https://www.notion.so/2582e9a3290281389afdeff8428fdc98?source=copy_link)   
@@ -44,38 +45,48 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 📌 개발 환경
 * DBMS   
-![alt text](image-1.png)
+<img width="107" height="28" alt="image-1" src="https://github.com/user-attachments/assets/15d47a72-1a3b-403f-81fb-291b6bd863c7" />
+
 
 * DB 관리 도구   
-![alt text](image-2.png)
+<img width="110" height="28" alt="image-2" src="https://github.com/user-attachments/assets/2d7976db-eca9-4706-995c-4ff40923f2cc" />
+
 
 * 가상화 환경   
-![alt text](image-3.png)
+<img width="130" height="28" alt="image-3" src="https://github.com/user-attachments/assets/e12eca13-29ab-43ba-a792-1edc75ec637a" />
+
 
 
 📌 협업 및 관리 도구
 
-* 협업 도구   
-![alt text](image-4.png)![alt text](image-5.png)
- 
+* 협업 도구
+
+<img width="98" height="28" alt="image-4" src="https://github.com/user-attachments/assets/be65eea3-a6e2-46bc-9a9a-fdf291674db2" /> <img width="105" height="28" alt="image-5" src="https://github.com/user-attachments/assets/86ed70f2-c5aa-40bc-be59-0b2bbffcc6a2" />
+
 
 * 버전 및 이슈 관리   
-![alt text](image-6.png)
+<img width="96" height="28" alt="image-6" src="https://github.com/user-attachments/assets/12833ca8-2eea-4617-9a97-8ba4e2138a5f" />
+
 
 * 데이터 관리   
-![alt text](image-7.png)
+ <img width="152" height="28" alt="image-7" src="https://github.com/user-attachments/assets/21193f03-ce5f-480a-b992-980751127494" />
+
 
 📌 ERD 및 다이어그램 도구
 
-* ERD 및 다이어그램 도구   
-![alt text](image-8.png)![alt text](image-9.png)
+* ERD 및 다이어그램 도구
+
+<img width="99" height="28" alt="image-8" src="https://github.com/user-attachments/assets/2a32382b-3db6-42e7-82bd-ac2a3a28c93e" /> <img width="105" height="28" alt="image-9" src="https://github.com/user-attachments/assets/cbd178c0-6591-4d08-b2c0-ddb2c4e45fa0" />
+
+
 
 ## 🧢 5. 프로젝트 산출물
 ### 1. WBS
 <details>
   <summary>WBS 이미지</summary>
 
-![alt text](image-11.png)
+<img width="1280" height="720" alt="image-10" src="https://github.com/user-attachments/assets/d616d56a-8140-4b22-b73c-4dcd17140ee1" />
+
 
 </details>
 
@@ -84,7 +95,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>요구사항 명세서 이미지</summary>
 
-![alt text](image-12.png)
+<img width="707" height="1000" alt="image-12" src="https://github.com/user-attachments/assets/87aef5bb-c940-4105-84ee-c2fc96f9701d" />
+
 
 </details>
 
@@ -93,7 +105,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>다이어그램 이미지</summary>
 
-![alt text](image-13.png)
+<img width="2013" height="3041" alt="image-13" src="https://github.com/user-attachments/assets/45c6cc7e-b007-4a0b-91a2-3447bff45d1e" />
+
 
 </details>
 
@@ -102,7 +115,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 <details>
   <summary>ERD 이미지</summary>
 
-![alt text](image-14.png)
+<img width="4160" height="2172" alt="image-14" src="https://github.com/user-attachments/assets/c6d15fef-4dc5-497f-8acc-4dcbdc404f2f" />
+
 
 </details>
 
