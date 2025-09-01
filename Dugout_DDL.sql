@@ -44,21 +44,26 @@ CREATE TABLE `category` (
 
 DROP TABLE IF EXISTS `board_report`;
 CREATE TABLE `board_report` (
-    `board_report_id` INT NOT NULL AUTO_INCREMENT,
-    `user_id` INT NOT NULL,
-    `board_id` INT NOT NULL,
-    `reason` TEXT NULL DEFAULT NULL,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `is_handled` BOOLEAN NOT NULL DEFAULT FALSE,
-    CONSTRAINT unique_report_board UNIQUE(user_id, board_id),
-    PRIMARY KEY (`board_report_id`)
-);
+  `board_report_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id` INT NOT NULL,
+  `board_id` INT NULL,
+  `friend_board_id` INT NULL,
+  `reason` TEXT NULL DEFAULT NULL,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_handled` TINYINT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`board_report_id`),
+  UNIQUE KEY `unique_report_board` (`user_id`, `board_id`),
+  UNIQUE KEY `unique_report_friend_board` (`user_id`, `friend_board_id`),
+  CONSTRAINT `chk_only_one_target`
+    CHECK ( (`board_id` IS NULL) <> (`friend_board_id` IS NULL) )
+) 
+;
 
 DROP TABLE IF EXISTS `player_comment`;
 CREATE TABLE `player_comment` (
     `player_comment_text_id` INT NOT NULL AUTO_INCREMENT,
     `text` TEXT NULL DEFAULT NULL,
-    `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- 자동 갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     `player_id` INT NOT NULL,
     `user_id` INT NOT NULL,
@@ -72,6 +77,7 @@ CREATE TABLE `user_block` (
     `blocked_id` INT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
+    CONSTRAINT unique_user_block UNIQUE(blocker_id, blocked_id), -- 중복 신고 방지 유니크 키 추가(09.01)
     PRIMARY KEY (`block_id`)
 );
 
@@ -89,7 +95,7 @@ DROP TABLE IF EXISTS `player_grade`;
 CREATE TABLE `player_grade` (
     `player_rate_id` INT NOT NULL AUTO_INCREMENT,
     `score` INT NULL DEFAULT 0,
-    `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    `updated_at` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     `player_id` INT NOT NULL,
     `user_id` INT NOT NULL,
@@ -104,7 +110,7 @@ CREATE TABLE `friend_comment` (
     `board_id` INT NOT NULL,
     `text` TEXT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, 
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`comment_id`)
 );
@@ -115,7 +121,7 @@ CREATE TABLE `team_popularity` (
     `point` INT NOT NULL DEFAULT 0,
     `date` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동 갱신
     `team_id` INT NOT NULL,
     PRIMARY KEY (`popularity_id`)
 );
@@ -146,7 +152,7 @@ CREATE TABLE `admin_board` (
     `title` VARCHAR(50) NOT NULL,
     `text` TEXT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`board_id`)
 );
@@ -163,7 +169,7 @@ CREATE TABLE `friend_board` (
     `gender` CHAR(3) NULL DEFAULT NULL,
     `age` INT NULL DEFAULT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`board_id`)
 );
@@ -173,7 +179,7 @@ CREATE TABLE `team` (
     `team_id` INT NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(50) NOT NULL,
     `city` VARCHAR(50) NOT NULL,
-    `founded_date` DATETIME NULL DEFAULT NULL,
+    `founded_date` DATE NULL DEFAULT NULL,  -- DATETIME -> DATE
     `mascot` VARCHAR(50) NULL DEFAULT NULL,
     `color` VARCHAR(50) NULL DEFAULT NULL,
     `stadium_id` INT NOT NULL,
@@ -198,7 +204,7 @@ CREATE TABLE `stadium` (
     `city` VARCHAR(50) NOT NULL,
     `capacity` INT NULL DEFAULT 0,
     `roofed` BOOLEAN NOT NULL DEFAULT FALSE,
-    `opened_date` DATETIME NULL DEFAULT NULL,
+    `opened_date` DATE NULL DEFAULT NULL, -- DATETIME -> DATE
     PRIMARY KEY (`stadium_id`)
 );
 
@@ -212,20 +218,23 @@ CREATE TABLE `comment_recommend` (
 
 DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
-    `user_id` INT NOT NULL AUTO_INCREMENT,
-    `team_id` INT NOT NULL,
-    `login_id` VARCHAR(50) NOT NULL,
-    `login_pw` VARCHAR(255) NOT NULL,
-    `email` VARCHAR(255) NOT NULL,
-    `name` VARCHAR(50) NOT NULL,
-    `nickname` VARCHAR(50) NOT NULL,
-    `gender` ENUM('M','F') NOT NULL,
-    `birth_date` DATETIME NOT NULL,
-    `point` INT NOT NULL DEFAULT 0,
+    `user_id`    INT NOT NULL AUTO_INCREMENT,
+    `team_id`    INT NOT NULL,
+    `login_id`   VARCHAR(50)  NOT NULL,
+    `login_pw`   VARCHAR(255) NOT NULL,
+    `email`      VARCHAR(255) NOT NULL,
+    `name`       VARCHAR(50)  NOT NULL,
+    `nickname`   VARCHAR(50)  NOT NULL,
+    `gender`     ENUM('M','F') NOT NULL,
+    `birth_date` DATE NOT NULL,  -- DATETIME → DATE (시각 삭제)
+    `point`      INT NOT NULL DEFAULT 0,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, -- 자동 갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
-    PRIMARY KEY (`user_id`)
+    `suspension_end` DATETIME NULL DEFAULT NULL,
+    PRIMARY KEY (`user_id`),
+    UNIQUE KEY `uk_user_login_id` (`login_id`),  -- 아이디 고유
+    UNIQUE KEY `uk_user_email`    (`email`)      -- 이메일 고유
 );
 
 DROP TABLE IF EXISTS `follow`;
@@ -247,7 +256,7 @@ CREATE TABLE `board` (
     `title` VARCHAR(80) NOT NULL,
     `text` TEXT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`board_id`)
 );
@@ -283,14 +292,18 @@ CREATE TABLE `board_recommend` (
 
 DROP TABLE IF EXISTS `comment_report`;
 CREATE TABLE `comment_report` (
-    `comment_report_id` INT NOT NULL AUTO_INCREMENT,
-    `user_id` INT NOT NULL,
-    `comment_id` INT NOT NULL,
-    `reason` TEXT NULL DEFAULT NULL,
-    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `is_handled` BOOLEAN NOT NULL DEFAULT FALSE,
-    CONSTRAINT unique_report_comment UNIQUE(user_id, comment_id),
-    PRIMARY KEY (`comment_report_id`)
+  `comment_report_id` INT NOT NULL AUTO_INCREMENT,
+  `user_id`           INT NOT NULL,
+  `comment_id`        INT NULL,
+  `friend_comment_id` INT NULL,
+  `reason`            TEXT NULL DEFAULT NULL,
+  `created_at`        TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_handled`        TINYINT(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`comment_report_id`),
+  UNIQUE KEY `unique_report_comment`       (`user_id`, `comment_id`),
+  UNIQUE KEY `unique_report_friend_comment`(`user_id`, `friend_comment_id`),
+  CONSTRAINT `chk_only_one_target`
+    CHECK ( (comment_id IS NULL) <> (friend_comment_id IS NULL) )
 );
 
 DROP TABLE IF EXISTS `admin`;
@@ -299,7 +312,7 @@ CREATE TABLE `admin` (
     `login_id` VARCHAR(50) NOT NULL,
     `login_pw` VARCHAR(50) NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`user_id`)
 );
@@ -312,7 +325,7 @@ CREATE TABLE `comment` (
     `user_id` INT NOT NULL,
     `text` TEXT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    `updated_at` TIMESTAMP NULL DEFAULT NULL,
+    `updated_at` TIMESTAMP NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP, -- 자동갱신
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     PRIMARY KEY (`comment_id`)
 );
@@ -365,3 +378,5 @@ ALTER TABLE `comment_report` ADD CONSTRAINT `FK_comment_TO_comment_report_1` FOR
 ALTER TABLE `comment` ADD CONSTRAINT `FK_board_TO_comment_1` FOREIGN KEY (`board_id`) REFERENCES `board`(`board_id`);
 ALTER TABLE `comment` ADD CONSTRAINT `FK_comment_TO_comment_1` FOREIGN KEY (`parent_comment_id`) REFERENCES `comment`(`comment_id`);
 ALTER TABLE `comment` ADD CONSTRAINT `FK_user_TO_comment_1` FOREIGN KEY (`user_id`) REFERENCES `user`(`user_id`);
+ALTER TABLE `board_report` ADD CONSTRAINT `FK_board_report_friend_board` FOREIGN KEY (`friend_board_id`) REFERENCES friend_board (`board_id`) ON UPDATE RESTRICT ON DELETE RESTRICT;
+ALTER TABLE `comment_report` ADD CONSTRAINT `FK_comment_report_friend_comment` FOREIGN KEY (`friend_comment_id`) REFERENCES `friend_comment` (`comment_id`) ON UPDATE RESTRICT ON DELETE RESTRICT;
