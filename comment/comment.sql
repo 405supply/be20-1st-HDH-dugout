@@ -22,8 +22,28 @@ DROP PROCEDURE if EXISTS select_comment;
 DELIMITER //
 CREATE PROCEDURE select_comment(IN _board_id INT)
 BEGIN
-	SELECT comment_id, parent_comment_id, user_id, TEXT, created_at, updated_at
-	FROM comment
+	DROP VIEW if EXISTS upvote;
+	CREATE VIEW upvote as
+		SELECT COUNT(*) AS up, c.comment_id
+		 FROM comment c
+		 JOIN comment_recommend cr
+		 ON c.comment_id = cr.comment_id
+		 WHERE cr.type = 'U'
+		 GROUP BY c.comment_id;
+	
+	DROP VIEW if EXISTS downvote;
+	CREATE VIEW downvote as
+		SELECT COUNT(*) AS down, c.comment_id
+		 FROM comment c
+		 JOIN comment_recommend cr
+		 ON c.comment_id = cr.comment_id
+		 WHERE cr.type = 'D'
+		 GROUP BY c.comment_id;
+	
+	SELECT c.comment_id, c.parent_comment_id, c.user_id, c.TEXT, c.created_at, c.updated_at, ifnull(u.up, 0), ifnull(d.down, 0)
+	FROM comment c
+	left JOIN upvote u ON c.comment_id = u.comment_id
+	left JOIN downvote d ON c.comment_id = d.comment_id
 	WHERE board_id = _board_id;
 END //
 DELIMITER ;
