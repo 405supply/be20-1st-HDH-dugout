@@ -77,6 +77,7 @@ CREATE TABLE `user_block` (
     `blocked_id` INT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
+    CONSTRAINT unique_user_block UNIQUE(blocker_id, blocked_id), -- 중복 신고 방지 유니크 키 추가(09.01)
     PRIMARY KEY (`block_id`)
 );
 
