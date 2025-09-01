@@ -1131,4 +1131,26 @@ INSERT INTO post_attachment (attachment_id, file_name, file_url, file_size, uplo
 INSERT INTO post_attachment (attachment_id, file_name, file_url, file_size, uploaded_at, is_deleted, type) VALUES (18, 'f18.dat', 'https://s.io/f/18.dat', 65395, CURRENT_TIMESTAMP, FALSE, '댓글');
 INSERT INTO post_attachment (attachment_id, file_name, file_url, file_size, uploaded_at, is_deleted, type) VALUES (19, 'f19.dat', 'https://s.io/f/19.dat', 245702, CURRENT_TIMESTAMP, FALSE, '댓글');
 INSERT INTO post_attachment (attachment_id, file_name, file_url, file_size, uploaded_at, is_deleted, type) VALUES (20, 'f20.dat', 'https://s.io/f/20.dat', 174643, CURRENT_TIMESTAMP, FALSE, '다이어리');
+-- 2025-09-01 ~ 2025-09-07 범위
+INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at) VALUES
+(201, 1, 'follow', 'insert', 2, '2025-09-01 10:00:00'),
+(202, 2, 'comment', 'insert', 4, '2025-09-02 11:00:00'),
+(203, 3, 'post', 'delete', -1, '2025-09-03 12:00:00'),
+(204, 4, 'follow', 'insert', 5, '2025-09-04 09:30:00'),
+(205, 5, 'comment', 'insert', 3, '2025-09-05 14:00:00'),
+(206, 6, 'follow', 'delete', -2, '2025-09-06 16:20:00'),
+(207, 7, 'post', 'insert', 6, '2025-09-07 08:45:00');
+
+
+-- 2025-08-25 ~ 2025-08-31 범위
+INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at) VALUES
+(101, 1, 'follow', 'insert', 5, '2025-08-25 10:00:00'),
+(102, 2, 'comment', 'insert', 3, '2025-08-26 11:00:00'),
+(103, 3, 'post', 'delete', -2, '2025-08-27 12:00:00'),
+(104, 4, 'follow', 'insert', 10, '2025-08-28 09:30:00'),
+(105, 5, 'comment', 'delete', -1, '2025-08-29 14:00:00'),
+(106, 6, 'follow', 'insert', 7, '2025-08-30 16:20:00'),
+(107, 7, 'post', 'insert', 5, '2025-08-31 08:45:00');
+
+
 COMMIT;
