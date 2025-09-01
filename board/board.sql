@@ -64,8 +64,8 @@ BEGIN
 END //
 DELIMITER ;	
 
-	-- 게시글 등록
-	DROP PROCEDURE if exists insert_board;
+-- 게시글 등록
+DROP PROCEDURE if exists insert_board;
 DELIMITER //
 CREATE PROCEDURE insert_board(
 	IN _category_id INT,

@@ -12,11 +12,13 @@ SELECT * from board_report ORDER BY created_at DESC LIMIT 3;
 
 CALL insert_board(
 	2,
-	4, 
+	10, 
 	"반갑게시글제목",
 	"안녕게시글내용"
 	);
-SELECT * FROM board ORDER BY created_at DESC LIMIT 3;
+	
+SELECT * FROM board ORDER BY created_at DESC LIMIT 10;
+SELECT * FROM point_log ORDER BY created_at DESC LIMIT 3;
 	
 CALL edit_board(
 	"수정한게시글제목",
@@ -27,7 +29,7 @@ CALL edit_board(
 CALL select_board_specific(41);
 
 
-CALL delete_board(41);
+CALL delete_board(51);
 CALL select_board_specific(41);
 
 CALL recommend_board(
