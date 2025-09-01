@@ -321,7 +321,7 @@ DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment` (
     `comment_id` INT NOT NULL AUTO_INCREMENT,
     `board_id` INT NOT NULL,
-    `parent_comment_id` INT NULL DEFAULT NULL,
+    `parent_comment_id` INT DEFAULT NULL,
     `user_id` INT NOT NULL,
     `text` TEXT NOT NULL,
     `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
