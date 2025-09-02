@@ -10,6 +10,7 @@ DROP PROCEDURE IF EXISTS user_soft_delete;
 
 DROP PROCEDURE IF EXISTS user_block_add;
 DROP PROCEDURE IF EXISTS user_block_cancel_by_id;
+DROP PROCEDURE IF EXISTS user_block_show;
 
 DROP PROCEDURE IF EXISTS mypage_posts_by_user;
 DROP PROCEDURE IF EXISTS mypage_comments_by_user;
@@ -136,7 +137,9 @@ BEGIN
     INSERT INTO user_block (blocker_id, blocked_id)
     VALUES (p_blocker_id, p_blocked_id)
     ON DUPLICATE KEY UPDATE is_deleted = FALSE;
-
+		
+	 CALL cancle_follow (p_blocker_id, p_blocked_id); -- 팔로워한 사람이면 언팔로우	
+		
     SELECT block_id, blocker_id, blocked_id, is_deleted, created_at
       FROM user_block
      WHERE blocker_id = p_blocker_id AND blocked_id = p_blocked_id;
@@ -160,6 +163,27 @@ BEGIN
      WHERE blocker_id = p_blocker_id
 	    AND blocked_id = p_blocked_id;
 END //
+
+
+-- =====================================================
+-- 차단 내역 조회
+-- =====================================================
+
+CREATE PROCEDURE user_block_show(IN p_blocker_id INT)
+BEGIN
+  SELECT
+       `block_id`
+     , `blocker_id`
+     , `blocked_id` AS '차단한 회원'
+     , `created_at`
+     , `is_deleted`
+  FROM `user_block`
+  WHERE blocker_id = p_blocker_id
+    AND is_deleted = FALSE
+  ORDER BY created_at DESC
+  LIMIT 20;
+END //
+
 
 -- =====================================================
 -- 마이페이지 - 본인 게시글 조회
