@@ -901,66 +901,213 @@ INSERT INTO diary (diary_id, text, created_at, is_deleted, is_public, user_id, g
 INSERT INTO diary (diary_id, text, created_at, is_deleted, is_public, user_id, game_id) VALUES (18, '응원 갔다 옴!', CURRENT_TIMESTAMP, FALSE, TRUE, 3, 10);
 INSERT INTO diary (diary_id, text, created_at, is_deleted, is_public, user_id, game_id) VALUES (19, '응원 갔다 옴!', CURRENT_TIMESTAMP, FALSE, TRUE, 26, 4);
 INSERT INTO diary (diary_id, text, created_at, is_deleted, is_public, user_id, game_id) VALUES (20, '응원 갔다 옴!', CURRENT_TIMESTAMP, FALSE, TRUE, 28, 11);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (1, CURRENT_TIMESTAMP, 22, 6, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (2, CURRENT_TIMESTAMP, 17, 6, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (3, CURRENT_TIMESTAMP, 11, 18, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (4, CURRENT_TIMESTAMP, 15, 8, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (5, CURRENT_TIMESTAMP, 21, 6, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (6, CURRENT_TIMESTAMP, 21, 14, 6);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (7, CURRENT_TIMESTAMP, 1, 20, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (8, CURRENT_TIMESTAMP, 15, 19, 7);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (9, CURRENT_TIMESTAMP, 13, 1, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (10, CURRENT_TIMESTAMP, 7, 9, 3);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (11, CURRENT_TIMESTAMP, 19, 4, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (12, CURRENT_TIMESTAMP, 12, 11, 3);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (13, CURRENT_TIMESTAMP, 15, 4, 4);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (14, CURRENT_TIMESTAMP, 22, 16, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (15, CURRENT_TIMESTAMP, 20, 13, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (16, CURRENT_TIMESTAMP, 19, 4, 4);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (17, CURRENT_TIMESTAMP, 12, 15, 7);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (18, CURRENT_TIMESTAMP, 27, 10, 8);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (19, CURRENT_TIMESTAMP, 22, 5, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (20, CURRENT_TIMESTAMP, 4, 8, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (21, CURRENT_TIMESTAMP, 4, 6, 2);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (22, CURRENT_TIMESTAMP, 23, 5, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (23, CURRENT_TIMESTAMP, 14, 20, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (24, CURRENT_TIMESTAMP, 19, 13, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (25, CURRENT_TIMESTAMP, 6, 16, 8);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (26, CURRENT_TIMESTAMP, 18, 6, 2);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (27, CURRENT_TIMESTAMP, 10, 5, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (28, CURRENT_TIMESTAMP, 11, 15, 7);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (29, CURRENT_TIMESTAMP, 28, 12, 9);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (30, CURRENT_TIMESTAMP, 16, 5, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (31, CURRENT_TIMESTAMP, 27, 13, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (32, CURRENT_TIMESTAMP, 14, 16, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (33, CURRENT_TIMESTAMP, 23, 15, 6);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (34, CURRENT_TIMESTAMP, 6, 3, 2);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (35, CURRENT_TIMESTAMP, 26, 8, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (36, CURRENT_TIMESTAMP, 2, 9, 3);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (37, CURRENT_TIMESTAMP, 18, 10, 8);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (38, CURRENT_TIMESTAMP, 25, 15, 6);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (39, CURRENT_TIMESTAMP, 18, 17, 8);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (40, CURRENT_TIMESTAMP, 19, 4, 4);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (41, CURRENT_TIMESTAMP, 25, 18, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (42, CURRENT_TIMESTAMP, 18, 2, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (43, CURRENT_TIMESTAMP, 18, 7, 9);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (44, CURRENT_TIMESTAMP, 4, 8, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (45, CURRENT_TIMESTAMP, 28, 2, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (46, CURRENT_TIMESTAMP, 9, 12, 9);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (47, CURRENT_TIMESTAMP, 15, 4, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (48, CURRENT_TIMESTAMP, 7, 19, 7);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (49, CURRENT_TIMESTAMP, 28, 20, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (50, CURRENT_TIMESTAMP, 6, 20, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (51, CURRENT_TIMESTAMP, 26, 7, 2);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (52, CURRENT_TIMESTAMP, 26, 2, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (53, CURRENT_TIMESTAMP, 18, 9, 3);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (54, CURRENT_TIMESTAMP, 11, 10, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (55, CURRENT_TIMESTAMP, 19, 9, 3);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (56, CURRENT_TIMESTAMP, 5, 14, 4);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (57, CURRENT_TIMESTAMP, 9, 5, 1);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (58, CURRENT_TIMESTAMP, 8, 5, 5);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (59, CURRENT_TIMESTAMP, 27, 8, 10);
-INSERT INTO vote (vote_id, date, user_id, game_id, team_id) VALUES (60, CURRENT_TIMESTAMP, 16, 5, 5);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 1,  DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 22, 6,  g.away_team_id FROM game g WHERE g.game_id=6
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 2,  DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 17, 6,  g.home_team_id FROM game g WHERE g.game_id=6
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 3,  DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 11, 18, g.away_team_id FROM game g WHERE g.game_id=18
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 4,  DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 15, 8,  g.home_team_id FROM game g WHERE g.game_id=8
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 5,  DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 21, 6,  g.away_team_id FROM game g WHERE g.game_id=6
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 6,  DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 21, 14, g.home_team_id FROM game g WHERE g.game_id=14
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 7,  DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 1,  20, g.away_team_id FROM game g WHERE g.game_id=20
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 8,  DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 15, 19, g.home_team_id FROM game g WHERE g.game_id=19
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 9,  DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 13, 1,  g.away_team_id FROM game g WHERE g.game_id=1
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 10, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 7,  9,  g.home_team_id FROM game g WHERE g.game_id=9
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 11, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 19, 4,  g.away_team_id FROM game g WHERE g.game_id=4
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 12, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 12, 11, g.home_team_id FROM game g WHERE g.game_id=11
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 13, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 15, 4,  g.away_team_id FROM game g WHERE g.game_id=4
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 14, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 22, 16, g.home_team_id FROM game g WHERE g.game_id=16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 15, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 20, 13, g.away_team_id FROM game g WHERE g.game_id=13
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 16, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 19, 4,  g.home_team_id FROM game g WHERE g.game_id=4
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 17, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 12, 15, g.away_team_id FROM game g WHERE g.game_id=15
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 18, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 27, 10, g.home_team_id FROM game g WHERE g.game_id=10
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 19, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 22, 5,  g.away_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 20, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 4,  8,  g.home_team_id FROM game g WHERE g.game_id=8
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 21, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 4,  6,  g.away_team_id FROM game g WHERE g.game_id=6
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 22, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 23, 5,  g.home_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 23, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 14, 20, g.away_team_id FROM game g WHERE g.game_id=20
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 24, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 19, 13, g.home_team_id FROM game g WHERE g.game_id=13
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 25, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 6,  16, g.away_team_id FROM game g WHERE g.game_id=16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 26, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 18, 6,  g.home_team_id FROM game g WHERE g.game_id=6
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 27, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 10, 5,  g.away_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 28, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 11, 15, g.home_team_id FROM game g WHERE g.game_id=15
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 29, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 28, 12, g.away_team_id FROM game g WHERE g.game_id=12
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 30, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 16, 5,  g.home_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 31, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 27, 13, g.away_team_id FROM game g WHERE g.game_id=13
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 32, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 14, 16, g.home_team_id FROM game g WHERE g.game_id=16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 33, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 23, 15, g.away_team_id FROM game g WHERE g.game_id=15
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 34, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 6,  3,  g.home_team_id FROM game g WHERE g.game_id=3
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 35, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 26, 8,  g.away_team_id FROM game g WHERE g.game_id=8
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 36, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 2,  9,  g.home_team_id FROM game g WHERE g.game_id=9
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 37, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 18, 10, g.away_team_id FROM game g WHERE g.game_id=10
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 38, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 25, 15, g.home_team_id FROM game g WHERE g.game_id=15
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 39, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 18, 17, g.away_team_id FROM game g WHERE g.game_id=17
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 40, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 19, 4,  g.home_team_id FROM game g WHERE g.game_id=4
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 41, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 25, 18, g.away_team_id FROM game g WHERE g.game_id=18
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 42, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 18, 2,  g.home_team_id FROM game g WHERE g.game_id=2
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 43, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 18, 7,  g.away_team_id FROM game g WHERE g.game_id=7
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 44, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 4,  8,  g.home_team_id FROM game g WHERE g.game_id=8
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 45, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 28, 2,  g.away_team_id FROM game g WHERE g.game_id=2
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 46, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 9,  12, g.home_team_id FROM game g WHERE g.game_id=12
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 47, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 15, 4,  g.away_team_id FROM game g WHERE g.game_id=4
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 48, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 7,  19, g.home_team_id FROM game g WHERE g.game_id=19
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 49, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 28, 20, g.away_team_id FROM game g WHERE g.game_id=20
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 50, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 6,  20, g.home_team_id FROM game g WHERE g.game_id=20
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 51, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 26, 7,  g.away_team_id FROM game g WHERE g.game_id=7
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 52, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 26, 2,  g.home_team_id FROM game g WHERE g.game_id=2
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 53, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 18, 9,  g.away_team_id FROM game g WHERE g.game_id=9
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 54, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 11, 10, g.home_team_id FROM game g WHERE g.game_id=10
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 55, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 19, 9,  g.away_team_id FROM game g WHERE g.game_id=9
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 56, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 5,  14, g.home_team_id FROM game g WHERE g.game_id=14
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 57, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 9,  5,  g.away_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 58, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 8,  5,  g.home_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 59, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 27, 8,  g.away_team_id FROM game g WHERE g.game_id=8
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 60, DATE_SUB(g.`date`, INTERVAL 90 MINUTE), 16, 5,  g.home_team_id FROM game g WHERE g.game_id=5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 61, DATE_SUB(g.`date`, INTERVAL 30 MINUTE), 3, 16, g.home_team_id
+FROM game g WHERE g.game_id = 16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 62, DATE_SUB(g.`date`, INTERVAL 15 MINUTE), 8, 16, g.away_team_id
+FROM game g WHERE g.game_id = 16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 63, DATE_ADD(g.`date`, INTERVAL 5 MINUTE), 12, 16, g.home_team_id
+FROM game g WHERE g.game_id = 16
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 64, DATE_SUB(g.`date`, INTERVAL 120 MINUTE), 2, 5, g.home_team_id
+FROM game g WHERE g.game_id = 5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 65, DATE_SUB(g.`date`, INTERVAL 40 MINUTE), 5, 5, g.away_team_id
+FROM game g WHERE g.game_id = 5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+SELECT 66, DATE_ADD(g.`date`, INTERVAL 12 MINUTE), 7, 5, g.home_team_id
+FROM game g WHERE g.game_id = 5
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+
 INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at) VALUES (1, 21, 'comment', 'delete', -5, CURRENT_TIMESTAMP);
 INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at) VALUES (2, 3, 'follow', 'insert', 5, CURRENT_TIMESTAMP);
 INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at) VALUES (3, 17, 'follow', 'delete', -3, CURRENT_TIMESTAMP);
@@ -1151,6 +1298,306 @@ INSERT INTO point_log (point_id, user_id, type, action, fluctuation, created_at)
 (105, 5, 'comment', 'delete', -1, '2025-08-29 14:00:00'),
 (106, 6, 'follow', 'insert', 7, '2025-08-30 16:20:00'),
 (107, 7, 'post', 'insert', 5, '2025-08-31 08:45:00');
+
+-- 61: 시작 30분 전, 홈팀으로 유효표
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  61,
+  (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 16),
+  3,
+  16,
+  (SELECT home_team_id FROM game WHERE game_id = 16)
+);
+
+-- 62: 시작 15분 전, 원정팀으로 유효표
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  62,
+  (SELECT DATE_SUB(`date`, INTERVAL 15 MINUTE) FROM game WHERE game_id = 16),
+  8,
+  16,
+  (SELECT away_team_id FROM game WHERE game_id = 16)
+);
+
+-- 63: 시작 5분 후, 홈팀으로 무효표(InvalidVotes 검증용)
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  63,
+  (SELECT DATE_ADD(`date`, INTERVAL 5 MINUTE) FROM game WHERE game_id = 16),
+  12,
+  16,
+  (SELECT home_team_id FROM game WHERE game_id = 16)
+);
+
+-- 64: 시작 2시간 전, 홈팀으로 유효표
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  64,
+  (SELECT DATE_SUB(`date`, INTERVAL 120 MINUTE) FROM game WHERE game_id = 5),
+  2,
+  5,
+  (SELECT home_team_id FROM game WHERE game_id = 5)
+);
+
+-- 65: 시작 40분 전, 원정팀으로 유효표
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  65,
+  (SELECT DATE_SUB(`date`, INTERVAL 40 MINUTE) FROM game WHERE game_id = 5),
+  5,
+  5,
+  (SELECT away_team_id FROM game WHERE game_id = 5)
+);
+
+-- 66: 시작 12분 후, 홈팀으로 무효표
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (
+  66,
+  (SELECT DATE_ADD(`date`, INTERVAL 12 MINUTE) FROM game WHERE game_id = 5),
+  7,
+  5,
+  (SELECT home_team_id FROM game WHERE game_id = 5)
+);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (1, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 6), 22, 6, (SELECT away_team_id FROM game WHERE game_id = 6))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (2, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 6), 17, 6, (SELECT home_team_id FROM game WHERE game_id = 6))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (3, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 18), 11, 18, (SELECT away_team_id FROM game WHERE game_id = 18))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (4, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 8), 15, 8, (SELECT home_team_id FROM game WHERE game_id = 8))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (5, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 6), 21, 6, (SELECT away_team_id FROM game WHERE game_id = 6))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (6, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 14), 21, 14, (SELECT home_team_id FROM game WHERE game_id = 14))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (7, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 20), 1, 20, (SELECT away_team_id FROM game WHERE game_id = 20))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (8, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 19), 15, 19, (SELECT home_team_id FROM game WHERE game_id = 19))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (9, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 1), 13, 1, (SELECT away_team_id FROM game WHERE game_id = 1))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (10, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 9), 7, 9, (SELECT home_team_id FROM game WHERE game_id = 9))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (11, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 4), 19, 4, (SELECT away_team_id FROM game WHERE game_id = 4))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (12, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 11), 12, 11, (SELECT home_team_id FROM game WHERE game_id = 11))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (13, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 4), 15, 4, (SELECT away_team_id FROM game WHERE game_id = 4))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (14, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 16), 22, 16, (SELECT home_team_id FROM game WHERE game_id = 16))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (15, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 13), 20, 13, (SELECT away_team_id FROM game WHERE game_id = 13))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (16, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 4), 19, 4, (SELECT home_team_id FROM game WHERE game_id = 4))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (17, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 15), 12, 15, (SELECT away_team_id FROM game WHERE game_id = 15))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (18, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 10), 27, 10, (SELECT home_team_id FROM game WHERE game_id = 10))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (19, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 5), 22, 5, (SELECT away_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (20, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 8), 4, 8, (SELECT home_team_id FROM game WHERE game_id = 8))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (21, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 6), 4, 6, (SELECT away_team_id FROM game WHERE game_id = 6))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (22, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 5), 23, 5, (SELECT home_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (23, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 20), 14, 20, (SELECT away_team_id FROM game WHERE game_id = 20))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (24, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 13), 19, 13, (SELECT home_team_id FROM game WHERE game_id = 13))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (25, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 16), 6, 16, (SELECT away_team_id FROM game WHERE game_id = 16))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (26, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 6), 18, 6, (SELECT home_team_id FROM game WHERE game_id = 6))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (27, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 5), 10, 5, (SELECT away_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (28, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 15), 11, 15, (SELECT home_team_id FROM game WHERE game_id = 15))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (29, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 12), 28, 12, (SELECT away_team_id FROM game WHERE game_id = 12))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (30, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 5), 16, 5, (SELECT home_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (31, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 13), 27, 13, (SELECT away_team_id FROM game WHERE game_id = 13))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (32, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 16), 14, 16, (SELECT home_team_id FROM game WHERE game_id = 16))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (33, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 15), 23, 15, (SELECT away_team_id FROM game WHERE game_id = 15))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (34, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 3), 6, 3, (SELECT home_team_id FROM game WHERE game_id = 3))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (35, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 8), 26, 8, (SELECT away_team_id FROM game WHERE game_id = 8))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (36, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 9), 2, 9, (SELECT home_team_id FROM game WHERE game_id = 9))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (37, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 10), 18, 10, (SELECT away_team_id FROM game WHERE game_id = 10))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (38, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 15), 25, 15, (SELECT home_team_id FROM game WHERE game_id = 15))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (39, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 17), 18, 17, (SELECT away_team_id FROM game WHERE game_id = 17))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (40, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 4), 19, 4, (SELECT home_team_id FROM game WHERE game_id = 4))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (41, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 18), 25, 18, (SELECT away_team_id FROM game WHERE game_id = 18))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (42, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 2), 18, 2, (SELECT home_team_id FROM game WHERE game_id = 2))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (43, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 7), 18, 7, (SELECT away_team_id FROM game WHERE game_id = 7))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (44, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 8), 4, 8, (SELECT home_team_id FROM game WHERE game_id = 8))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (45, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 2), 28, 2, (SELECT away_team_id FROM game WHERE game_id = 2))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (46, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 12), 9, 12, (SELECT home_team_id FROM game WHERE game_id = 12))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (47, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 4), 15, 4, (SELECT away_team_id FROM game WHERE game_id = 4))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (48, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 19), 7, 19, (SELECT home_team_id FROM game WHERE game_id = 19))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (49, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 20), 28, 20, (SELECT away_team_id FROM game WHERE game_id = 20))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (50, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 20), 6, 20, (SELECT home_team_id FROM game WHERE game_id = 20))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (51, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 7), 26, 7, (SELECT away_team_id FROM game WHERE game_id = 7))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (52, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 2), 26, 2, (SELECT home_team_id FROM game WHERE game_id = 2))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (53, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 9), 18, 9, (SELECT away_team_id FROM game WHERE game_id = 9))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (54, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 10), 11, 10, (SELECT home_team_id FROM game WHERE game_id = 10))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (55, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 9), 19, 9, (SELECT away_team_id FROM game WHERE game_id = 9))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (56, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 14), 5, 14, (SELECT home_team_id FROM game WHERE game_id = 14))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (57, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 5), 9, 5, (SELECT away_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (58, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 5), 8, 5, (SELECT home_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (59, (SELECT DATE_SUB(`date`, INTERVAL 30 MINUTE) FROM game WHERE game_id = 8), 27, 8, (SELECT away_team_id FROM game WHERE game_id = 8))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
+
+INSERT INTO vote (vote_id, `date`, user_id, game_id, team_id)
+VALUES (60, (SELECT DATE_SUB(`date`, INTERVAL 90 MINUTE) FROM game WHERE game_id = 5), 16, 5, (SELECT home_team_id FROM game WHERE game_id = 5))
+ON DUPLICATE KEY UPDATE `date`=VALUES(`date`), team_id=VALUES(team_id);
 
 
 COMMIT;
