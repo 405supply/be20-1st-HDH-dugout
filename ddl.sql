@@ -100,6 +100,7 @@ CREATE TABLE `player_grade` (
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     `player_id` INT NOT NULL,
     `user_id` INT NOT NULL,
+    CONSTRAINT `CHK_score_1_5` CHECK (`score` BETWEEN 1 AND 5),
     PRIMARY KEY (`player_rate_id`)
 );
 
@@ -269,6 +270,7 @@ CREATE TABLE `vote` (
     `user_id` INT NOT NULL,
     `game_id` INT NOT NULL,
     `team_id` INT NOT NULL,
+    CONSTRAINT `uq_vote_user_game` UNIQUE (`user_id`, `game_id`),
     PRIMARY KEY (`vote_id`)
 );
 
