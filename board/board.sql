@@ -41,16 +41,28 @@ DELIMITER //
 
 CREATE PROCEDURE select_board_specific(IN _board_id INT)
 BEGIN
-	SELECT board_id
-		  , category_id
-		  , user_id
-		  , title
-		  , text
-		  , created_at
-		  , updated_at
-	  FROM board
-	 WHERE board_id = _board_id
-	 	AND is_deleted = 0;
+	SELECT b.board_id
+		  , b.category_id
+		  , b.user_id
+		  , b.title
+		  , b.text
+		  , b.created_at
+		  , b.updated_at
+		  , IFNULL(SUM(case when br.type = 'U' then 1 ELSE 0 END), 0) AS upvote
+		  , IFNULL(SUM(case when br.type = 'D' then 1 ELSE 0 END), 0) AS downvote
+	  FROM board b
+	  LEFT JOIN board_recommend br
+	  ON b.board_id = br.board_id
+	 WHERE b.board_id = _board_id
+	 	AND b.is_deleted = 0
+	 GROUP BY 
+	 		 b.board_id
+		  , b.category_id
+		  , b.user_id
+		  , b.title
+		  , b.text
+		  , b.created_at
+		  , b.updated_at;
 END //
 DELIMITER ;
 	  
