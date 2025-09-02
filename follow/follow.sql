@@ -6,7 +6,8 @@ DELIMITER //
 
 CREATE PROCEDURE add_follow(IN following INT, IN followed INT)
 BEGIN
-	INSERT INTO follow (following_id, followed_id) VALUES (following, followed);
+	INSERT INTO follow (following_id, followed_id) VALUES (following, followed)
+	ON DUPLICATE KEY UPDATE is_deleted = IF(is_deleted = 1, 0, is_deleted);
 END //
 
 DELIMITER ;     
