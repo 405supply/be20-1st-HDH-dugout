@@ -25,10 +25,11 @@ SELECT * FROM point_log ORDER BY created_at DESC LIMIT 3;
 	
 	
 CALL edit_board(
-	"수정한게시글제목",
-	"수정한게시글내용",
-	41,
-	4
+	"수정한게시글제목2",
+	"수정한게시글내용2",
+	6,
+	42,
+	10
 );
 CALL select_board_specific(41);
 
