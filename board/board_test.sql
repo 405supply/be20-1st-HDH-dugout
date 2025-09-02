@@ -7,6 +7,9 @@ CALL select_all_board();
 CALL select_board_by_category(6);
 
 
+CALL search_board_by_keyword("안녕");
+
+
 CALL select_board_specific(5);
 
 
