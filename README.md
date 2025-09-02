@@ -120,3 +120,295 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 </details>
 
+
+## 테스트 케이스
+<details>
+  <summary>👤회원</summary>
+
+
+</details>
+
+<details>
+  <summary>💰포인트</summary>
+
+
+</details>
+
+<details>
+  <summary>👥팔로우</summary>
+<details>
+  <summary>¹팔로우</summary>
+
+</details>
+<details>
+  <summary>²팔로우 취소</summary>
+
+</details>
+<details>
+  <summary>³팔로잉id, 시간조회</summary>
+
+</details>
+<details>
+  <summary>⁴팔로워id, 시간조회</summary>
+
+</details>
+<details>
+  <summary>⁵팔로잉 게시물 조회</summary>
+
+</details>
+</details>
+
+<details>
+  <summary>🛠️관리자</summary>
+<details>
+  <summary>¹공지사항 등록</summary>
+
+</details>
+<details>
+  <summary>²공지사항 수정</summary>
+
+</details>
+<details>
+  <summary>³공지사항 삭제</summary>
+  
+</details>
+<details>
+  <summary>⁴회원 신고 조회</summary>
+
+</details>
+<details>
+  <summary>⁵회원 정지 기능</summary>
+
+</details>
+<details>
+  <summary>⁶회원 정지 해제</summary>
+
+</details>
+<details>
+  <summary>⁷정지된 회원 조회</summary>
+
+</details>
+<details>
+  <summary>⁸신고 게시글 삭제 기능</summary>
+
+</details>
+<details>
+  <summary>⁹신고 댓글 삭제 기능</summary>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary>📋게시판</summary>
+<details>
+  <summary>¹게시글 검색</summary>
+
+</details>
+<details>
+  <summary>²모든 게시글 조회</summary>
+
+</details>
+<details>
+  <summary>³카테고리별 조회</summary>
+  
+</details>
+<details>
+  <summary>⁴게시글 상세 조회</summary>
+
+</details>
+<details>
+  <summary>⁵게시글 신고</summary>
+
+</details>
+<details>
+  <summary>⁶게시글 등록</summary>
+
+</details>
+<details>
+  <summary>⁷게시글 수정</summary>
+
+</details>
+<details>
+  <summary>⁸게시글 삭제</summary>
+
+</details>
+<details>
+  <summary>⁹게시글 추천, 비추천</summary>
+
+</details>
+<details>
+  <summary>¹⁰인기 게시글 조회</summary>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary>⭐북마크</summary>
+
+
+</details>
+
+<details>
+  <summary>💬댓글</summary>
+  <details>
+  <summary>¹댓글 등록</summary>
+
+</details>
+<details>
+  <summary>²댓글 수정</summary>
+
+</details>
+<details>
+  <summary>³댓글 신고</summary>
+  
+</details>
+<details>
+  <summary>⁴댓글 조회</summary>
+
+</details>
+<details>
+  <summary>⁵댓글 추천</summary>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary>⚾경기</summary>
+    <details>
+  <summary>¹매개 변수 지정</summary>
+
+</details>
+<details>
+  <summary>²팀 지정</summary>
+
+</details>
+<details>
+  <summary>³날짜 지정</summary>
+  
+</details>
+<details>
+  <summary>⁴모든 결과</summary>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary>🧢선수</summary>
+    <details>
+  <summary>¹평점 수정</summary>
+
+</details>
+<details>
+  <summary>²평점 삭제</summary>
+
+</details>
+<details>
+  <summary>³팀별 평점 상위 10명 리스트 조회</summary>
+  
+</details>
+<details>
+  <summary>⁴특정 선수 평점 조회</summary>
+
+</details>
+<details>
+  <summary>⁵전체 선수 평점 조회</summary>
+
+</details>
+
+
+</details>
+
+
+<details>
+  <summary>🎽팀</summary>
+      <details>
+  <summary>¹0825기준 주간 팀 인기도 집계</summary>
+
+</details>
+<details>
+  <summary>²0901기준 주간 팀 인기도 집계</summary>
+
+</details>
+
+
+</details>
+
+<details>
+  <summary>🗳️투표</summary>
+   <details>
+  <summary>¹모든 테이블</summary>
+
+</details>
+<details>
+  <summary>²특정 유저 특정 팀 투표</summary>
+
+</details>
+<details>
+  <summary>³지정 경기 팀별 투표수 조회 </summary>
+  
+</details>
+<details>
+  <summary>⁴특정 경기 최종 투표 결과 조회</summary>
+
+</details>
+<details>
+  <summary>⁵전체 경기 또는 특정 경기 투표 결과 조회</summary>
+
+</details>
+
+</details>
+
+<details>
+  <summary>🔍친구찾기</summary>
+  <details>
+  <summary>¹친구 찾기 게시글 등록</summary>
+
+</details>
+<details>
+  <summary>²친구 찾기 게시글 수정</summary>
+
+</details>
+<details>
+  <summary>³친구 찾기 게시글 삭제</summary>
+  
+</details>
+<details>
+  <summary>⁴친구 찾기 게시글 조회</summary>
+
+</details>
+<details>
+  <summary>⁵친구 찾기 게시글 댓글 작성</summary>
+
+</details>
+<details>
+  <summary>⁶친구 찾기 게시글 댓글 수정</summary>
+
+</details>
+<details>
+  <summary>⁷친구 찾기 게시글 댓글 삭제</summary>
+
+</details>
+<details>
+  <summary>⁸친구 찾기 맞춤형 게시글 조회</summary>
+
+</details>
+
+
+</details>
+
+
+
+
+
+
+
+
+
