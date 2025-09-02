@@ -97,6 +97,7 @@ DELIMITER //
 CREATE PROCEDURE edit_board(
 	IN _title VARCHAR(80),
 	IN _text TEXT,
+	IN _category INT,
 	IN _board_id INT,
 	IN _user_id INT
 )
@@ -104,6 +105,7 @@ BEGIN
 	UPDATE board
 			 SET title = _title
 	     , TEXT = _text
+	     , category_id = _category
 	     , updated_at = CURRENT_TIMESTAMP
 	 WHERE board_id = _board_id
 	 	AND user_id = _user_id
