@@ -88,6 +88,7 @@ CREATE TABLE `bookmark` (
     `is_deleted` BOOLEAN NOT NULL DEFAULT FALSE,
     `board_id` INT NOT NULL,
     `user_id` INT NOT NULL,
+    CONSTRAINT unique_bookmark UNIQUE(board_id, user_id), -- 중복 북마크 방지 유니크 키 추가(09.02)
     PRIMARY KEY (`bookmark_id`)
 );
 
