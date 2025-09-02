@@ -17,6 +17,18 @@ BEGIN
 END //
 DELIMITER ;
 
+-- 제목 또는 내용으로 게시글 검색
+DROP PROCEDURE if EXISTS search_board_by_keyword;
+DELIMITER //
+
+CREATE PROCEDURE search_board_by_keyword(IN keyword VARCHAR(255))
+BEGIN
+    SELECT board_id, title, text
+    FROM board
+    WHERE title LIKE CONCAT('%', keyword, '%')
+       OR text LIKE CONCAT('%', keyword, '%');
+END //
+
 -- 카테고리 별 게시글 목록 조회
 DROP PROCEDURE if exists select_board_by_category;
 DELIMITER //
