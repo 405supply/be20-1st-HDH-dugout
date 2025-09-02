@@ -124,6 +124,107 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 ## 테스트 케이스
 <details>
   <summary>👤회원</summary>
+<details>
+  <summary>¹회원가입</summary>
+<img width="879" height="550" alt="MEM-01_회원가입_1" src="https://github.com/user-attachments/assets/ddaabdc0-5532-4108-aaa2-b2f2e75fb101" />
+<img width="1483" height="572" alt="MEM-01_회원가입_2" src="https://github.com/user-attachments/assets/85dc61fd-9c7d-4a80-a957-9e1cbafe7b42" />
+
+
+</details>
+<details>
+  <summary>²로그인</summary>
+<img width="894" height="434" alt="MEM-02_로그인_1" src="https://github.com/user-attachments/assets/46351457-ca55-48de-b595-997ff5d2ddb4" />
+<img width="1038" height="182" alt="MEM-02_로그인_2" src="https://github.com/user-attachments/assets/92d75d18-e955-4f9d-a1b7-60f57370c4e0" />
+<img width="1089" height="206" alt="MEM-02_로그인_3" src="https://github.com/user-attachments/assets/7e3ce2c5-8df2-483d-a4d0-5f30b65665b2" />
+
+
+</details>
+<details>
+  <summary>³회원정보 수정</summary>
+  <img width="1462" height="430" alt="MEM-04_회원정보수정_1" src="https://github.com/user-attachments/assets/cc5aae77-8aa2-439a-8fa3-0b1c130b398a" />
+<img width="1496" height="429" alt="MEM-04_회원정보수정_2" src="https://github.com/user-attachments/assets/86f7f943-cafe-4a90-9555-3dfdeff50ca2" />
+
+
+</details>
+<details>
+  <summary>⁴아이디 찾기</summary>
+  <img width="524" height="357" alt="MEM-05_아이디찾기_1" src="https://github.com/user-attachments/assets/bf3f9550-1cb2-403c-9164-d58808a147b6" />
+  
+</details>
+<details>
+  <summary>⁵비밀번호 재설정</summary>
+  <img width="1470" height="503" alt="MEM-06_비밀번호재설정_1" src="https://github.com/user-attachments/assets/b40dbe43-1dae-48af-9a4d-32324120f49a" />
+<img width="620" height="505" alt="MEM-06_비밀번호재설정_2" src="https://github.com/user-attachments/assets/5391e1a5-0190-470f-bf8d-34ca7e1036da" />
+
+</details>
+<details>
+  <summary>⁶회원 탈퇴</summary
+<img width="1524" height="441" alt="MEM-07_회원탈퇴_1" src="https://github.com/user-attachments/assets/310506c5-21e6-44a0-93f5-5653517cd159" />
+<img width="516" height="442" alt="MEM-07_회원탈퇴_2" src="https://github.com/user-attachments/assets/0a6a8c03-56fe-4de6-8282-91075e49356c" />
+<img width="1519" height="85" alt="MEM-07_회원탈퇴_3" src="https://github.com/user-attachments/assets/58f471f6-9478-49a0-bc8a-39c53e9d3a48" />
+
+</details>
+<details>
+  <summary>⁷회원 차단</summary>
+  <img width="740" height="464" alt="MEM-08_회원차단_1" src="https://github.com/user-attachments/assets/ac66bb56-0666-4dda-b4b0-c8fa67319871" />
+  <img width="747" height="565" alt="MEM-08_회원차단(언팔로우)_2" src="https://github.com/user-attachments/assets/863c72ef-4288-4314-bfa0-a9a71ed91bbb" />
+<img width="759" height="526" alt="MEM-08_회원차단(언팔로우)_3" src="https://github.com/user-attachments/assets/ba48f5e6-6479-4ce0-9688-5e392c006410" />
+
+</details>
+<details>
+  <summary>⁸회원 차단 해제</summary>
+  <img width="505" height="487" alt="MEM-09_회원차단해제_1" src="https://github.com/user-attachments/assets/927317e7-2410-4870-ad0d-7ed721ac3e78" />
+
+</details>
+<details>
+  <summary>⁹차단 내역 조회</summary>
+  <img width="617" height="469" alt="MEM-10_차단내역조회_1" src="https://github.com/user-attachments/assets/57b4e655-9b3a-4337-b11f-177b65ab693c" />
+
+</details>
+<details>
+  <summary>¹⁰마이 페이지 게시글 조회</summary>
+  <img width="990" height="563" alt="MEM-11_마이페이지게시글조회_1" src="https://github.com/user-attachments/assets/430c3c80-60ae-4b63-8e57-e94c26c7ff1c" />
+<img width="1273" height="538" alt="MEM-11_마이페이지게시글조회_2" src="https://github.com/user-attachments/assets/d590ed8c-aa77-4676-bc88-648ef2e367da" />
+
+</details>
+<details>
+  <summary>¹¹마이 페이지 댓글 조회</summary>
+  <img width="876" height="534" alt="MEM-12_마이페이지댓글조회_1" src="https://github.com/user-attachments/assets/2f323c73-357f-4ed7-9bb5-27590420b09a" />
+<img width="932" height="517" alt="MEM-12_마이페이지댓글조회_2" src="https://github.com/user-attachments/assets/4d1eb0f6-f7ac-4e92-b144-0609a1f46aa4" />
+
+</details>
+<details>
+  <summary>¹²경기 관람 다이어리</summary>
+  <img width="581" height="411" alt="MEM-13_경기관람다이어리_1" src="https://github.com/user-attachments/assets/25aeb925-b1b8-431d-8e32-7e6fd4a9adcf" />
+<img width="780" height="518" alt="MEM-13_경기관람다이어리_2" src="https://github.com/user-attachments/assets/2538f215-da7e-4709-86d7-02c00f5e0c75" />
+
+</details>
+<details>
+  <summary>¹³경기 관람 다이어리 조회</summary>
+<img width="781" height="416" alt="MEM-15_경기관람다이어리조회_1" src="https://github.com/user-attachments/assets/3fb8031f-a10c-4c46-85d9-d1d26ecec647" />
+
+</details>
+<details>
+  <summary>¹⁴경기 관람 다이어리 삭제</summary>
+<img width="593" height="474" alt="MEM-14_경기관람다이어리삭제_1" src="https://github.com/user-attachments/assets/9a8f429b-aab6-4494-9985-910a1130e1f0" />
+<img width="783" height="522" alt="MEM-14_경기관람다이어리삭제_2" src="https://github.com/user-attachments/assets/24a4fea6-54f8-42ab-a6df-015b1f6742f5" />
+
+</details>
+<details>
+  <summary>¹⁵회원 포인트 조회</summary>
+<img width="585" height="398" alt="MEM-16_회원포인트조회_1" src="https://github.com/user-attachments/assets/fd673e9f-b65b-4cab-b59a-c2a1bc324660" />
+
+</details>
+<details>
+  <summary>¹⁶회원 포인트 이력 조회</summary>
+<img width="650" height="469" alt="MEM-17_회원포인트이력조회_1" src="https://github.com/user-attachments/assets/f2259e8f-6cb6-4318-9694-c7e48b28a75d" />
+
+</details>
+<details>
+  <summary>¹⁷북마크 조회</summary>
+<img width="610" height="459" alt="MEM-18_북마크조회_1" src="https://github.com/user-attachments/assets/59458d49-734e-4600-a417-087e88dc9f7e" />
+
+</details>
 
 
 </details>
@@ -138,22 +239,32 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>👥팔로우</summary>
 <details>
   <summary>¹팔로우</summary>
+<img width="958" height="303" alt="팔로우" src="https://github.com/user-attachments/assets/6d238b71-74a7-4bab-a6b6-c2f98ab3d4aa" />
+<img width="745" height="113" alt="팔로우 테스트" src="https://github.com/user-attachments/assets/1167f1e6-6339-4475-bf2f-44a2c19dba8c" />
 
 </details>
 <details>
   <summary>²팔로우 취소</summary>
+<img width="846" height="296" alt="팔로우 취소" src="https://github.com/user-attachments/assets/5e279839-3aa2-40ee-ba47-b9500184ffb0" />
+<img width="820" height="160" alt="팔로우 취소 테스트" src="https://github.com/user-attachments/assets/aafc74fe-f482-4478-a996-7a5b4c4ca7fc" />
 
 </details>
 <details>
   <summary>³팔로잉id, 시간조회</summary>
+<img width="682" height="301" alt="팔로잉 id, 시간조회" src="https://github.com/user-attachments/assets/0a43e2bc-41ad-4122-a973-ff6d95ee05ee" />
+<img width="1102" height="163" alt="팔로잉 id, 시간조회 테스트" src="https://github.com/user-attachments/assets/6fe7dbc5-2848-4017-a84d-e818c803ce43" />
 
 </details>
 <details>
   <summary>⁴팔로워id, 시간조회</summary>
+<img width="678" height="298" alt="팔로워 id, 시간조회" src="https://github.com/user-attachments/assets/add44a6f-bc83-4e8e-8327-8f7ff5566b60" />
+<img width="1077" height="163" alt="팔로워 id, 시간조회 테스트" src="https://github.com/user-attachments/assets/7b16de46-149c-4a44-9a4a-184094622dd6" />
 
 </details>
 <details>
   <summary>⁵팔로잉 게시물 조회</summary>
+<img width="1102" height="345" alt="팔로잉 게시물 조회" src="https://github.com/user-attachments/assets/d581dbce-852f-4f5f-9217-e54736e995a7" />
+<img width="1066" height="225" alt="팔로잉 게시물 조회 테스트" src="https://github.com/user-attachments/assets/e5fb2ab6-0a1e-49da-88e5-8898b7713309" />
 
 </details>
 </details>
@@ -162,41 +273,72 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>🛠️관리자</summary>
 <details>
   <summary>¹공지사항 등록</summary>
+<img width="806" height="372" alt="01  MAN-01 공지사항 등록" src="https://github.com/user-attachments/assets/3b617256-3699-426a-a8ba-2a2af049e337" />
+<img width="607" height="39" alt="02  MAN-01 공지사항 등록 테스트 성공" src="https://github.com/user-attachments/assets/0ea2bfc8-a58c-4117-9d37-4daeca1e9cb5" />
+<img width="703" height="71" alt="03  MAN-01 공지사항 등록 테스트 성공 2" src="https://github.com/user-attachments/assets/644cac7e-663e-4f2c-912a-2aee935c9825" />
+* 공지사항 등록 실패
+<img width="701" height="310" alt="04  MAN-01 공지사항 등록 실패png" src="https://github.com/user-attachments/assets/e2d6d163-13a7-4e6a-908f-d4db6b140124" />
 
 </details>
 <details>
   <summary>²공지사항 수정</summary>
+<img width="617" height="431" alt="05  MAN-02 공지사항 수정" src="https://github.com/user-attachments/assets/36d12c4d-9ade-40c1-b593-ba0ce4849a50" />
+<img width="810" height="128" alt="06  MAN-02 공지사항 수정 테스트" src="https://github.com/user-attachments/assets/d84e2f80-7e00-400c-8aef-afb12706d435" />
 
 </details>
 <details>
   <summary>³공지사항 삭제</summary>
-  
+  <img width="639" height="343" alt="07  MAN-03 공지사항 삭제" src="https://github.com/user-attachments/assets/853592da-4a3f-4b7d-9163-0f7e63203050" />
+<img width="809" height="128" alt="08  MAN-03 공지사항 삭제 테스트" src="https://github.com/user-attachments/assets/e9f46d6a-a5f1-4456-ad11-01dfc558ea52" />
+
 </details>
 <details>
   <summary>⁴회원 신고 조회</summary>
+<img width="781" height="452" alt="09  MAN-04 회원 신고 조회" src="https://github.com/user-attachments/assets/24d45395-dd07-4310-a695-ce02c786bcc9" />
+<img width="850" height="454" alt="10  MAN-04 회원 신고 조회1" src="https://github.com/user-attachments/assets/93b30993-8e5c-49a8-bdb3-b81a657b24a2" />
+<img width="785" height="170" alt="11  MAN-4 회원 신고 조회2" src="https://github.com/user-attachments/assets/6ebc386c-c52c-4009-883e-7e7ba250be83" />
+* 회원 신고 조회 테스트
+<img width="1025" height="332" alt="12  MAN-04 회원 신고조회 테스트 1" src="https://github.com/user-attachments/assets/4aaf9a5f-4181-4651-ba68-20b2b9386bf5" />
+<img width="994" height="199" alt="13  MAN-04 회원 신고 조회 테스트 2" src="https://github.com/user-attachments/assets/2706df10-e6ce-4f60-8bf7-dbbdcd0c7dbf" />
+<img width="1022" height="218" alt="14  MAN-04 회원 신고 조회 테스트3" src="https://github.com/user-attachments/assets/f001d8ec-7533-4371-bf30-4df2c5663747" />
 
 </details>
 <details>
   <summary>⁵회원 정지 기능</summary>
+<img width="910" height="336" alt="15  MAN-05 회원 정지기능 1" src="https://github.com/user-attachments/assets/47aeac2c-85d5-46e5-9f15-837f8eefd240" />
+<img width="911" height="318" alt="16  MAN-05 회원 정지 기능 2" src="https://github.com/user-attachments/assets/acd6f573-6d27-46a8-abd9-21f75a33c155" />
+* 회원 정지 기능 테스트
+<img width="910" height="157" alt="17  MAN-05 회원 정지기능 테스트 1" src="https://github.com/user-attachments/assets/b40faebd-e5d0-4f87-b459-ee9d1f4346c2" />
+<img width="917" height="110" alt="18  MAN-05 회원 정지기능 테스트2" src="https://github.com/user-attachments/assets/135d566e-8118-4d7a-86da-43926e8b6d27" />
+
 
 </details>
 <details>
   <summary>⁶회원 정지 해제</summary>
+<img width="906" height="347" alt="19  MAN-06 회원 정지 해제 기능" src="https://github.com/user-attachments/assets/662ca792-3f03-4f88-ba28-54b2dadba5a5" />
+<img width="911" height="127" alt="20  MAN-06 회원 정지 해제 기능 테스트" src="https://github.com/user-attachments/assets/cbe3d420-fb73-49e2-b0a5-68e2bb938f15" />
 
 </details>
 <details>
   <summary>⁷정지된 회원 조회</summary>
+<img width="913" height="254" alt="21  MAN-07 정지된 회원 조회" src="https://github.com/user-attachments/assets/68267f47-a93f-4426-ab77-3f6d26885d8b" />
+<img width="913" height="115" alt="22  MAN-07 정지된 회원 조회 테스트" src="https://github.com/user-attachments/assets/1f3079cf-6e4f-427e-b2ac-dba4f32a42ee" />
 
 </details>
 <details>
   <summary>⁸신고 게시글 삭제 기능</summary>
+<img width="911" height="356" alt="23  MAN-08 신고 게시글 삭제기능1" src="https://github.com/user-attachments/assets/5602dfaf-58cc-4523-8b5e-1a9531c473d1" />
+<img width="913" height="332" alt="24  MAN-08 신고 게시글 삭제기능 테스트" src="https://github.com/user-attachments/assets/f3952572-4edd-4c37-a15a-720962413b8c" />
+<img width="917" height="200" alt="25  MAN-08 신고 게시글 삭제 기능 테스트2" src="https://github.com/user-attachments/assets/8ad10800-ffc9-4949-b422-b049e15da1af" />
 
 </details>
 <details>
   <summary>⁹신고 댓글 삭제 기능</summary>
+<img width="910" height="365" alt="26  MAN-09 신고 댓글 삭제 기능 테스트" src="https://github.com/user-attachments/assets/5bd97d2f-8b7f-4946-9afc-11a228248ba4" />
+<img width="912" height="434" alt="27  MAN-09 신고 댓글 삭제 기능 테스트" src="https://github.com/user-attachments/assets/08bfbdfd-387c-468e-bb8b-47ed1d0a84fd" />
+<img width="919" height="364" alt="28  MAN-09 신고 댓글 삭제 기능 테스트" src="https://github.com/user-attachments/assets/352d040b-66fb-4662-82ec-d9a3b397668f" />
 
 </details>
-
 
 </details>
 
@@ -204,42 +346,62 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>📋게시판</summary>
 <details>
   <summary>¹게시글 검색</summary>
+<img width="935" height="198" alt="BOA-01 게시글 검색 procedure" src="https://github.com/user-attachments/assets/caaa6c4c-fc36-46fb-affd-1cdbb9ad06d3" />
+<img width="577" height="285" alt="BOA-01 게시글 검색 result" src="https://github.com/user-attachments/assets/9bcb1fa2-98cf-4293-b4ce-9177c5a7d923" />
 
 </details>
 <details>
   <summary>²모든 게시글 조회</summary>
+<img width="590" height="442" alt="BOA-02 모든 게시글 조회 procedure" src="https://github.com/user-attachments/assets/14214797-fecb-47bc-85f7-619bc63fb967" />
+<img width="707" height="357" alt="BOA-02 모든 게시글 조회 result" src="https://github.com/user-attachments/assets/a07d1cf1-6816-4ab6-92d0-e178f2fa7f78" />
 
 </details>
 <details>
   <summary>³카테고리별 조회</summary>
-  
+<img width="828" height="417" alt="BOA-03 카테고리별 조회 procedure" src="https://github.com/user-attachments/assets/d09908f6-4900-456e-8f8c-509d0a2580b2" />
+<img width="637" height="273" alt="BOA-03 카테고리별 조회 result" src="https://github.com/user-attachments/assets/3be22347-547c-4fa9-98aa-08b24bf3a173" />
+
 </details>
 <details>
   <summary>⁴게시글 상세 조회</summary>
+<img width="1108" height="695" alt="BOA-04 게시글 상세 조회 procedure" src="https://github.com/user-attachments/assets/3defb996-a8f6-4830-b59f-4c8d9c0e0ebc" />
+<img width="1257" height="156" alt="BOA-04 게시글 상세 조회 result" src="https://github.com/user-attachments/assets/332d7379-2d31-4e9e-8e95-a86d01295256" />
 
 </details>
 <details>
   <summary>⁵게시글 신고</summary>
+<img width="1111" height="203" alt="BOA-05 게시글 신고 procedure" src="https://github.com/user-attachments/assets/324c51d2-0e5f-472f-9329-db4f12cec5f8" />
+<img width="972" height="212" alt="BOA-05 게시글 신고 result" src="https://github.com/user-attachments/assets/febc54b4-ee5f-4f88-a405-a2aec7850fbc" />
 
 </details>
 <details>
   <summary>⁶게시글 등록</summary>
+<img width="782" height="337" alt="BOA-06 게시글 등록 procedure" src="https://github.com/user-attachments/assets/e8658cd6-7b47-4fd6-af58-75dad66dafc3" />
+<img width="1308" height="202" alt="BOA-06 게시글 등록 result" src="https://github.com/user-attachments/assets/fbe5280a-0621-4141-951b-dad30afda4d2" />
 
 </details>
 <details>
   <summary>⁷게시글 수정</summary>
+<img width="667" height="520" alt="BOA-07 게시글 수정 procedure" src="https://github.com/user-attachments/assets/9ec3ac5f-a83e-4028-8a30-cac0858f612a" />
+<img width="1197" height="355" alt="BOA-07 게시글 수정 result" src="https://github.com/user-attachments/assets/0eba3199-97d4-4fab-9afd-80700d35e660" />
 
 </details>
 <details>
   <summary>⁸게시글 삭제</summary>
+<img width="480" height="288" alt="BOA-08 게시글 삭제 procedure" src="https://github.com/user-attachments/assets/51e1ffb7-543d-475b-9d9f-74c986488aec" />
+<img width="1178" height="337" alt="BOA-08 게시글 삭제 result" src="https://github.com/user-attachments/assets/0f476122-31af-4a39-b1d0-23b9d9561bc0" />
 
 </details>
 <details>
   <summary>⁹게시글 추천, 비추천</summary>
+<img width="1072" height="472" alt="BOA-09, 10 게시글 추천, 비추천 result" src="https://github.com/user-attachments/assets/7bdc276a-95bb-4b07-97b9-be9b5d8a43a6" />
+<img width="790" height="311" alt="BOA-09, 10 게시글 추천,비추천 procedure" src="https://github.com/user-attachments/assets/66b6fc1c-ac44-4acd-b019-91559e02cc3b" />
 
 </details>
 <details>
   <summary>¹⁰인기 게시글 조회</summary>
+<img width="915" height="595" alt="BOA-11 인기 게시글 조회 procedure" src="https://github.com/user-attachments/assets/a6a8c783-b701-437f-8cf5-60497f4f2824" />
+<img width="787" height="352" alt="BOA-11 인기 게시글 조회 result" src="https://github.com/user-attachments/assets/ec830532-8ab3-4c6d-be21-29836cd6763c" />
 
 </details>
 
@@ -248,7 +410,16 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 <details>
   <summary>⭐북마크</summary>
+  <details>
+  <summary>¹북마크 등록</summary>
+<img width="726" height="603" alt="BOA-12_북마크등록_1" src="https://github.com/user-attachments/assets/8a2054d2-725d-4dc7-9937-b34c33184c17" />
 
+</details>
+<details>
+  <summary>²북마크 해제</summary>
+<img width="684" height="601" alt="BOA-13_북마크해제_1" src="https://github.com/user-attachments/assets/b8b14db9-a198-433b-8a75-79bae7c2c5cc" />
+
+</details>
 
 </details>
 
@@ -256,22 +427,32 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>💬댓글</summary>
   <details>
   <summary>¹댓글 등록</summary>
+<img width="825" height="403" alt="댓글등록 1" src="https://github.com/user-attachments/assets/add4e2da-df98-485b-a40f-6223df65bc3d" />
+<img width="1121" height="210" alt="댓글등록 2" src="https://github.com/user-attachments/assets/ecfecdb8-d6b7-48b0-a402-25f1388f7efc" />
 
 </details>
 <details>
   <summary>²댓글 수정</summary>
+<img width="792" height="322" alt="댓글수정 1" src="https://github.com/user-attachments/assets/14bf452b-dd5f-494a-b2dd-69d8829e8206" />
+<img width="1067" height="183" alt="댓글수정 2" src="https://github.com/user-attachments/assets/7498ee4b-e6fe-4eb2-b4d9-45d2ee32be52" />
 
 </details>
 <details>
   <summary>³댓글 신고</summary>
-  
+<img width="1042" height="262" alt="댓글신고 1" src="https://github.com/user-attachments/assets/d66cba68-b316-4124-b58f-1e74252331bf" />
+<img width="951" height="180" alt="댓글신고 2" src="https://github.com/user-attachments/assets/6a9af950-773e-42b7-9c80-4b060f141386" />
+
 </details>
 <details>
   <summary>⁴댓글 조회</summary>
+<img width="737" height="568" alt="댓글조회 1" src="https://github.com/user-attachments/assets/a013f80d-fcdb-4ce4-ac42-20329a615651" />
+<img width="1006" height="236" alt="댓글조회 2" src="https://github.com/user-attachments/assets/3f8d2833-180a-4eb5-a401-35ec6f5b6e1b" />
 
 </details>
 <details>
   <summary>⁵댓글 추천</summary>
+<img width="1177" height="267" alt="댓글추천 1" src="https://github.com/user-attachments/assets/d30d6b8d-33cb-44f9-8c86-c19bbdc226ad" />
+<img width="497" height="222" alt="댓글추천 2" src="https://github.com/user-attachments/assets/2c3a2a2e-c89d-4a64-8e24-4e5cd036094a" />
 
 </details>
 
@@ -282,18 +463,26 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>⚾경기</summary>
     <details>
   <summary>¹매개 변수 지정</summary>
+<img width="910" height="695" alt="(1)게임_매개변수_지정_프" src="https://github.com/user-attachments/assets/2e711131-122a-409a-ad93-b5f719a39565" />
+<img width="1118" height="162" alt="(1)게임_매개변수_지정" src="https://github.com/user-attachments/assets/2b9a12e4-268d-4888-8f1f-dd62d9960a65" />
 
 </details>
 <details>
   <summary>²팀 지정</summary>
+<img width="893" height="692" alt="(2)게임_팀_지정_프" src="https://github.com/user-attachments/assets/ff74e642-7714-4d1e-9770-4110aa3bef22" />
+<img width="1125" height="162" alt="(2)게임_팀_지정" src="https://github.com/user-attachments/assets/5c0849be-76be-4d17-8feb-1804e77356c5" />
 
 </details>
 <details>
   <summary>³날짜 지정</summary>
-  
+<img width="895" height="691" alt="(3)게임_날짜_지정_프" src="https://github.com/user-attachments/assets/8ff016ff-5274-4f58-8d4e-693940efe00c" />
+<img width="1177" height="603" alt="(3)게임_날짜_지정" src="https://github.com/user-attachments/assets/e1fadb8e-553c-4156-a97e-2ad80e688ee2" />
+
 </details>
 <details>
   <summary>⁴모든 결과</summary>
+<img width="895" height="697" alt="(4)게임_모든결과_프" src="https://github.com/user-attachments/assets/29a599c2-7505-40da-9155-eb2fdc196124" />
+<img width="1175" height="607" alt="(4)게임_모든결과" src="https://github.com/user-attachments/assets/525a4df9-25e4-47b5-b3e9-fa8ddba07df3" />
 
 </details>
 
@@ -304,22 +493,32 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>🧢선수</summary>
     <details>
   <summary>¹평점 수정</summary>
+<img width="650" height="188" alt="(1)평점_수정_프" src="https://github.com/user-attachments/assets/18c745c5-1486-448f-8023-464f26072fa3" />
+<img width="208" height="62" alt="(1)평점_수정" src="https://github.com/user-attachments/assets/37bf4f90-156c-4f85-9b8f-49d01cf90f92" />
 
 </details>
 <details>
   <summary>²평점 삭제</summary>
+<img width="778" height="137" alt="(2)평점_삭제_프" src="https://github.com/user-attachments/assets/0d72a623-9fa9-4cfe-8309-c936f0462c9b" />
+<img width="223" height="68" alt="(2)평점_삭제" src="https://github.com/user-attachments/assets/c47a2319-7f7b-4b1b-bf49-df57a5c9ae2f" />
 
 </details>
 <details>
   <summary>³팀별 평점 상위 10명 리스트 조회</summary>
-  
+<img width="552" height="162" alt="(3)평점_팀1상위10명_리스트_프" src="https://github.com/user-attachments/assets/fa327a81-3997-4945-97cd-6515253efe98" />
+<img width="565" height="317" alt="(3)평점_팀1상위10명_리스트" src="https://github.com/user-attachments/assets/83d5a3c1-5a0c-46e0-815b-61a9a05861f8" />
+
 </details>
 <details>
   <summary>⁴특정 선수 평점 조회</summary>
+<img width="367" height="111" alt="(4)평점_특정선수1_프" src="https://github.com/user-attachments/assets/dd7394d8-67d2-48f1-ad8c-d18ca97c6abd" />
+<img width="687" height="76" alt="(4)평점_특정선수1" src="https://github.com/user-attachments/assets/34463e90-b67a-432f-8766-2d3db05f04c8" />
 
 </details>
 <details>
   <summary>⁵전체 선수 평점 조회</summary>
+<img width="447" height="132" alt="(5)평점_전체선수_조회_프" src="https://github.com/user-attachments/assets/0519c395-b3a8-4881-9336-aab2c0bdc21b" />
+<img width="381" height="686" alt="(5)평점_전체선수_조회" src="https://github.com/user-attachments/assets/e97a3fd6-abc2-44ae-9494-6cb61b5459c8" />
 
 </details>
 
@@ -331,10 +530,13 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>🎽팀</summary>
       <details>
   <summary>¹0825기준 주간 팀 인기도 집계</summary>
+<img width="432" height="668" alt="팀_인기도_프로시저" src="https://github.com/user-attachments/assets/eaf20d26-58d6-40b5-9547-b226d2465b0b" />
+<img width="458" height="332" alt="팀_인기도_0901기준_주간집계_순위" src="https://github.com/user-attachments/assets/8f06c17e-3a9a-4895-9f44-8f66bd807666" />
 
 </details>
 <details>
   <summary>²0901기준 주간 팀 인기도 집계</summary>
+<img width="458" height="332" alt="팀_인기도_0901기준_주간집계_순위" src="https://github.com/user-attachments/assets/b19052c9-8194-4cdb-9766-3cf540332694" />
 
 </details>
 
@@ -345,22 +547,33 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>🗳️투표</summary>
    <details>
   <summary>¹모든 테이블</summary>
+<img width="1022" height="257" alt="(1투표_모든테이블_프" src="https://github.com/user-attachments/assets/293e7176-ae31-48fb-b6f3-5d49b7557724" />
+<img width="227" height="187" alt="(1)투표_모든테이블" src="https://github.com/user-attachments/assets/c8be591b-9ae6-47db-8d0d-f2028926ab0b" />
 
 </details>
 <details>
   <summary>²특정 유저 특정 팀 투표</summary>
+<img width="990" height="568" alt="(2)투표_특정유저가투표_프" src="https://github.com/user-attachments/assets/c4e86ed7-6ef3-42bd-80bb-2216ba8a97f0" />
+<img width="217" height="71" alt="(2)투표_특정유저가투표" src="https://github.com/user-attachments/assets/f932dfc3-835a-4ee7-955f-abc3ac64124c" />
 
 </details>
 <details>
   <summary>³지정 경기 팀별 투표수 조회 </summary>
-  
+<img width="816" height="477" alt="(3)투표_5번경기_팀별_투표수조회_프" src="https://github.com/user-attachments/assets/139c6e8d-0d3a-4952-95d3-45a5fd6213f3" />
+<img width="377" height="102" alt="(3)투표_5번경기_팀별_투표수조회" src="https://github.com/user-attachments/assets/3fd70e08-3046-4c97-a3b6-4de541bd398e" />
+
 </details>
 <details>
   <summary>⁴특정 경기 최종 투표 결과 조회</summary>
+<img width="936" height="625" alt="(4)투표_16번경과_최종투표_결과_프" src="https://github.com/user-attachments/assets/2a7203ea-1818-42ed-921c-9ae2f0a2f1f5" />
+<img width="461" height="88" alt="(4)투표_16번경기_최종투표_결과" src="https://github.com/user-attachments/assets/24a3f0b1-b317-4a82-a89b-0f4250358006" />
 
 </details>
 <details>
   <summary>⁵전체 경기 또는 특정 경기 투표 결과 조회</summary>
+<img width="877" height="652" alt="(5)전체결과_1번_프" src="https://github.com/user-attachments/assets/931bab14-f4c9-4d2d-9fb5-b33fa9b55c03" />
+<img width="887" height="592" alt="(5)전체결과_2번_프" src="https://github.com/user-attachments/assets/6ce8903f-139b-4420-b68f-d318ad424ec3" />
+<img width="1476" height="602" alt="(5)전체_특정_경기투표결과조회" src="https://github.com/user-attachments/assets/0cc07e23-b6c0-4cc2-b83a-735e119e3a64" />
 
 </details>
 
@@ -370,30 +583,54 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
   <summary>🔍친구찾기</summary>
   <details>
   <summary>¹친구 찾기 게시글 등록</summary>
+<img width="911" height="347" alt="01  CON-13 친구 찾기 게시글 등록" src="https://github.com/user-attachments/assets/51f24aed-3c81-4e58-98d6-4b25c5a5d254" />
+<img width="914" height="200" alt="02  CON-13 친구 찾기 게시글 등록 테스트" src="https://github.com/user-attachments/assets/2746a2c5-6c99-40f8-96f7-5734f6097a74" />
 
 </details>
 <details>
   <summary>²친구 찾기 게시글 수정</summary>
+<img width="913" height="347" alt="03  CON-14 친구 찾기 게시글 수정" src="https://github.com/user-attachments/assets/1e6cf775-c621-4f40-ae9d-3f0b388a7dfe" />
+<img width="910" height="347" alt="04  CON-14 친구 찾기 게시글 수정 1" src="https://github.com/user-attachments/assets/2ebf850b-06c8-4a38-b7ed-562f56c4e0af" />
+* 친구 찾기 게시글 수정 테스트
+<img width="1046" height="301" alt="05  CON-14 친구 찾기 게시글 수정 테스트" src="https://github.com/user-attachments/assets/d0603f13-21f0-4ca5-9aea-63926ba549f6" />
 
 </details>
 <details>
   <summary>³친구 찾기 게시글 삭제</summary>
-  
+  <img width="914" height="347" alt="06  CON-15 친구 찾기 게시글 삭제" src="https://github.com/user-attachments/assets/08cb5a68-5a3d-4cea-ba72-dec706cdeb1c" />
+<img width="916" height="163" alt="07  CON-15 친구 찾기 게시글 삭제" src="https://github.com/user-attachments/assets/39ab40fd-629d-4ffb-8c93-7b944c23767b" />
+* 친구 찾기 게시글 삭제 테스트
+<img width="914" height="118" alt="08  CON-15 친구 찾기 게시글 삭제 테스트" src="https://github.com/user-attachments/assets/a8179b0f-5cf4-4e9a-b1b7-3cea4f32b891" />
+
 </details>
 <details>
   <summary>⁴친구 찾기 게시글 조회</summary>
+<img width="916" height="348" alt="09  CON-16 친구 찾기 게시글 조회 1" src="https://github.com/user-attachments/assets/470ecca0-72b8-40b2-98f7-2fe985f02b04" />
+<img width="911" height="346" alt="11  CON-16 친구 찾기 게시글 조회2" src="https://github.com/user-attachments/assets/ebc7b6f1-7458-4950-bb6a-518fbc9826ca" />
+<img width="908" height="347" alt="12  CON-16 친구 찾기 게시글 조회3" src="https://github.com/user-attachments/assets/34ec8fec-977f-40b6-9b66-6d90096c80c3" />
+* 친구 찾기 게시글 조회 테스트
+<img width="920" height="266" alt="10  CON-16 친구 찾기 게시글 조회 테스트" src="https://github.com/user-attachments/assets/fd9b5311-eb75-4e95-b3f2-2d4dbbe223fb" />
+<img width="1035" height="150" alt="13  CON-16 친구 찾기 게시글 조회 테스트" src="https://github.com/user-attachments/assets/d3f55e31-9fca-46c3-bb4c-8b0b4be07e6f" />
 
 </details>
 <details>
   <summary>⁵친구 찾기 게시글 댓글 작성</summary>
+<img width="909" height="331" alt="14  CON-17 친구 찾기 게시글 댓글 작성" src="https://github.com/user-attachments/assets/6d7e144d-4555-42a0-abe1-ef45800aef09" />
+<img width="911" height="118" alt="15  CON-17 친 구찾기 게시글 댓글 작성 테스트" src="https://github.com/user-attachments/assets/2ff98ffa-7a8c-4328-acb8-6f1c6bbf7cc7" />
 
 </details>
 <details>
   <summary>⁶친구 찾기 게시글 댓글 수정</summary>
+<img width="914" height="350" alt="16  CON-18 친구 찾기 게시글 댓 글수정1" src="https://github.com/user-attachments/assets/13b62fd9-03ea-4450-a5cc-cd717aaefa16" />
+<img width="912" height="164" alt="17  CON-18 친구 찾기 게시글 댓글 조회 수정2" src="https://github.com/user-attachments/assets/36ede1c7-4cbe-44f4-9bf0-cfa6f521d238" />
+* 친구 찾기 게시글 댓글 수정 테스트
+<img width="917" height="119" alt="18  CON-18 친구 찾기 게시글 댓글 수정 테스트" src="https://github.com/user-attachments/assets/2862848b-63ae-4a12-acd1-13cf7bc93090" />
 
 </details>
 <details>
   <summary>⁷친구 찾기 게시글 댓글 삭제</summary>
+<img width="909" height="346" alt="19  CON-19 친구 찾기 게시글 댓글 삭제" src="https://github.com/user-attachments/assets/d6f8a64a-b110-4d76-b1c9-1552cc8a8dd1" />
+<img width="914" height="119" alt="20  CON-19 친구 찾기 게시글 댓글 삭제 테스트" src="https://github.com/user-attachments/assets/92fd134c-a001-45c7-847e-1439ddb79617" />
 
 </details>
 <details>
