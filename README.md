@@ -4,7 +4,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 
 ## 👥 1. 팀원소개 
-| [김동리](https://www.notion.so/2582e9a3290281389afdeff8428fdc98?source=copy_link) | [김민주](https://www.notion.so/2582e9a3290281fd930ff514479a324b?source=copy_link) | [김진](https://www.notion.so/2582e9a3290281498debd7b6434201f2?source=copy_link) | [배창민](https://www.notion.so/2582e9a3290281e8a52ae75fd10a5845?source=copy_link) | [최지원](https://www.notion.so/2582e9a32902817dafe5c9370e79344f?source=copy_link) |
+| [김동리](https://github.com/longlive13) | [김민주](https://github.com/minjubu) | [김진](https://github.com/steamjin) | [배창민](https://github.com/ChAnGMiNBae) | [최지원](https://github.com/405supply) |
 |---|---|---|---|---|
 |![김동리](https://github.com/user-attachments/assets/bf4db010-0943-433a-820b-65a1c3888a1b)|![김민주](https://github.com/user-attachments/assets/8ec28881-2665-4e24-933b-86e59512e12a)|![김진](https://github.com/user-attachments/assets/007200ec-248f-4259-aa38-2b0c66ea06a3)|![배창민](https://github.com/user-attachments/assets/8de5ee2e-4860-41ce-8a31-28eabb98cdef)|![최지원](https://github.com/user-attachments/assets/6ffdfdbb-1b73-4db3-9414-51be09a966f8)|
 
