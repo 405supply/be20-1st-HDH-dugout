@@ -1,4 +1,4 @@
-# ⚾Dugout
+# ⚾ Dugout
 Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼으로, 팬들이 소통하고 다양한 콘텐츠를 즐길 수 있는 공간을 제공합니다.
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/c9c67e7e-54f7-46ba-a84e-e591b1d50bb5" />
 
@@ -9,6 +9,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 [김진](https://www.notion.so/2582e9a3290281498debd7b6434201f2?source=copy_link)   
 [배창민](https://www.notion.so/2582e9a3290281e8a52ae75fd10a5845?source=copy_link)   
 [최지원](https://www.notion.so/2582e9a32902817dafe5c9370e79344f?source=copy_link)
+<br>
+
 
 ## 📖 2. 프로젝트 개요
 ### 소개
@@ -31,6 +33,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 - **구단별 인기도 측정 및 투표**
     - 사용자가 설정한 팀을 통해 구단의 인기척도 확인
     - 경기 결과 예측을 통해 참여기능 확대
+<br>
+
 
 ## 🥎 3. 유사 서비스
 | 플랫폼 | 주요 기능 요약 | 강점 | 단점 |
@@ -40,6 +44,8 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 | **네이버 카페** | 팀별 커뮤니티 운영, 정보 공유, 팬 소통 | 특정 팀 자료/팬 활동 중심, 정보 깊음 | 활성도 차이, 공식성 낮음 |
 | **엠엘비파크** | 야구 전문 커뮤니티, 분석·통계·중계 링크 제공 | 전문적 분석, 광범위 정보, 팬 토론 활발 | UI 복잡, 진입장벽, 활동 방식 부담감 가능 |
 | **디시인사이드 야구갤러리** | 자유로운 소통 구조 | 실시간성, 사용자 맞춤 기능, 활성화 수준 | 정보 신뢰도 낮음, 유해 콘텐츠 위험 있음 |
+<br>
+
 
 ## 💻 4. 개발 환경 및 기술 스택
 
@@ -77,13 +83,13 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 * ERD 및 다이어그램 도구
 
 <img width="99" height="28" alt="image-8" src="https://github.com/user-attachments/assets/2a32382b-3db6-42e7-82bd-ac2a3a28c93e" /> <img width="105" height="28" alt="image-9" src="https://github.com/user-attachments/assets/cbd178c0-6591-4d08-b2c0-ddb2c4e45fa0" />
-
+<br>
 
 
 ## 🧢 5. 프로젝트 산출물
 ### 1. WBS
 <details>
-  <summary>WBS 이미지</summary>
+  <summary>WBS 이미지 상세보기</summary>
 
 <img width="1280" height="720" alt="image-10" src="https://github.com/user-attachments/assets/d616d56a-8140-4b22-b73c-4dcd17140ee1" />
 
@@ -93,7 +99,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 ### 2. 요구사항 명세서
 * 프로젝트 요구사항 명세서는 [여기](https://docs.google.com/spreadsheets/d/1aKpTmSCLcmLd4_0NxP548aITIQ6JUWpFq3gpb4unjY8/edit?usp=sharing)에서 확인하실 수 있습니다.
 <details>
-  <summary>요구사항 명세서 이미지</summary>
+  <summary>요구사항 명세서 상세보기</summary>
 
 <img width="707" height="1000" alt="image-12" src="https://github.com/user-attachments/assets/87aef5bb-c940-4105-84ee-c2fc96f9701d" />
 
@@ -103,7 +109,7 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 ### 3. UML
 * 프로젝트의 UML 다이어그램은 [여기](https://drive.google.com/file/d/14fIqEHI4_JvdVqzAxLwa63DNPvW2UQNR/view?usp=sharing)에서 확인하실 수 있습니다.
 <details>
-  <summary>다이어그램 이미지</summary>
+  <summary>다이어그램 상세보기</summary>
 
 <img width="2013" height="3041" alt="image-13" src="https://github.com/user-attachments/assets/45c6cc7e-b007-4a0b-91a2-3447bff45d1e" />
 
@@ -113,15 +119,57 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 ### 4. DB 모델링
 * 프로젝트의 ERD 모델링은 [여기](https://www.erdcloud.com/d/9SefTR798Zuztg7uf)에서 확인하실 수 있습니다.
 <details>
-  <summary>ERD 이미지</summary>
+  <summary>ERD 이미지 상세보기</summary>
 
 <img width="4160" height="2172" alt="image-14" src="https://github.com/user-attachments/assets/c6d15fef-4dc5-497f-8acc-4dcbdc404f2f" />
 
 
 </details>
 
+### 5. 테이블 정의서
+* 테이블 정의서는[여기](https://docs.google.com/spreadsheets/d/1iTzV1zQF5hL2CSCfBW06Hw03OEWc0d0GJcWrS71DeOg/edit?usp=sharing) 에서 확인하실 수 있습니다.
+<details>
+  <summary>테이블 정의서 상세보기</summary>
+<img width="1397" height="868" alt="테이블 정의서 01" src="https://github.com/user-attachments/assets/a77b8730-e555-4aa7-b262-971f2c5f21f6" />
+<img width="1398" height="863" alt="테이블 정의서 02" src="https://github.com/user-attachments/assets/2f5cc1e7-5c4d-49f5-8eca-83a51f213ad4" />
+<img width="1391" height="868" alt="테이블 정의서 03" src="https://github.com/user-attachments/assets/6089e20f-c5b4-4aaa-9b60-4d1fd981f022" />
+<img width="1393" height="865" alt="테이블 정의서 04" src="https://github.com/user-attachments/assets/b6e4e172-418a-4e7e-9139-d54ac52000d7" />
+<img width="1397" height="863" alt="테이블 정의서 05" src="https://github.com/user-attachments/assets/062b9b3e-e13d-4b8f-8b76-a1a4f6beb688" />
+<img width="1397" height="866" alt="테이블 정의서 06" src="https://github.com/user-attachments/assets/7d70366b-bb0d-4a74-8630-47c7066a4f3d" />
+<img width="1392" height="867" alt="테이블 정의서 07" src="https://github.com/user-attachments/assets/5e345348-a0cf-444c-8efe-ed7fe9f380fb" />
+<img width="1397" height="865" alt="테이블 정의서 08" src="https://github.com/user-attachments/assets/7eb4b9c1-06df-4455-945d-e09030a750ae" />
+<img width="1396" height="863" alt="테이블 정의서 09" src="https://github.com/user-attachments/assets/7f38264b-3981-44e7-bf01-d52b6e9d1393" />
 
-## 테스트 케이스
+
+</details>
+<br>
+
+## ⚙️ 6. 서버 구축
+
+### 리플리케이션(Replication)
+
+리플리케이션은 데이터를 여러 서버에 복제하여 고가용성, 성능 향상, 데이터 안전성, 장애 복구를 동시에 제공하는 기술입니다.
+
+---
+* Master 서버
+  * 데이터의 변경에 대한 처리를 담당하고 변경 사항을 Slave 서버로 전달
+
+* Slave 서버
+   * Master 서버의 데이터를 복제하여 읽기 작업만 수행
+
+<details>
+  <summary>master 서버 -> slave 서버 복제 확인</summary>
+<img width="1918" height="1019" alt="서버구축" src="https://github.com/user-attachments/assets/e85a3887-316c-4b6b-a4af-796c4bbb548a" />
+
+</details>
+<details>
+  <summary>slave 서버에서 데이터 변경 시 오류 발생 확인</summary>
+<img width="1919" height="1014" alt="서버구축_2" src="https://github.com/user-attachments/assets/8ab0961a-2f12-441b-9fea-f2d7f5789ef0" />
+
+</details>
+<br>
+
+## ✅ 7. 테스트 케이스
 <details>
   <summary>👤회원</summary>
 <details>
@@ -635,11 +683,36 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 </details>
 <details>
   <summary>⁸친구 찾기 맞춤형 게시글 조회</summary>
+<img width="913" height="344" alt="21  CON-20 친구 찾기 맞춤형 게시글 조회 1" src="https://github.com/user-attachments/assets/871e4bd4-aaaa-4033-8247-02f08930ba65" />
+<img width="913" height="345" alt="22  CON-20 친구 찾기 맞춤형 게시글 조회2" src="https://github.com/user-attachments/assets/278fc849-faf7-47ad-b928-a31e190c1aca" />
+<img width="911" height="344" alt="23  CON-20 친구 찾기 맞춤형 게시글 조회3" src="https://github.com/user-attachments/assets/3fc98c9d-bf0f-4c9a-a086-21a535226ea0" />
+<img width="913" height="347" alt="24  CON-20 친구 찾기 맞춤형 게시글 조회4" src="https://github.com/user-attachments/assets/454ac8c3-356f-4c74-ae57-dd4753e4c616" />
+<img width="911" height="346" alt="25  CON-20 친구 찾기 맞춤형 게시글 조회5" src="https://github.com/user-attachments/assets/6645d0d3-97c4-4310-8ab7-16453c6c9c07" />
+<img width="913" height="349" alt="26  CON-20 친구 찾기 맞춤형 게시글 조회6" src="https://github.com/user-attachments/assets/4d365fbc-4624-4340-8ce1-cef3964167ab" />
+<img width="913" height="113" alt="27  CON-20 친구 찾기 맞춤형 게시글 조회8" src="https://github.com/user-attachments/assets/57bb77b7-7c0e-4a33-aeb5-2427e8fba788" />
+* 친구 찾기 맞춤형 게시글 조회 테스트
+<img width="1033" height="393" alt="28  친구 찾기 맞춤형 게시글 조회 테스트" src="https://github.com/user-attachments/assets/f8caae1c-bba5-4fd9-8fb9-e67575a0f51a" />
 
 </details>
 
 
 </details>
+<br>
+
+## 📝 8. 회고록
+
+### 프로젝트 진행 후 회고
+
+| 조원명 | 소감문 |
+|--------|--------|
+| 김동리| 프로젝트 재미있게 진행했습니다. |
+| 김민주 | 많이 배우고 성장할 수 있었습니다. |
+| 김진 | 팀워크가 정말 좋았습니다. |
+| 배창민 | 프로젝트 재미있게 진행했습니다. |
+| 최지원 | 많이 배우고 성장할 수 있었습니다. |
+
+
+
 
 
 
