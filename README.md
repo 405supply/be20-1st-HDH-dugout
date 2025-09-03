@@ -4,11 +4,15 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 
 ## 👥 1. 팀원소개 
-[김동리](https://www.notion.so/2582e9a3290281389afdeff8428fdc98?source=copy_link)   
-[김민주](https://www.notion.so/2582e9a3290281fd930ff514479a324b?source=copy_link)   
-[김진](https://www.notion.so/2582e9a3290281498debd7b6434201f2?source=copy_link)   
-[배창민](https://www.notion.so/2582e9a3290281e8a52ae75fd10a5845?source=copy_link)   
-[최지원](https://www.notion.so/2582e9a32902817dafe5c9370e79344f?source=copy_link)
+| [김동리](https://www.notion.so/2582e9a3290281389afdeff8428fdc98?source=copy_link) | [김민주](https://www.notion.so/2582e9a3290281fd930ff514479a324b?source=copy_link) | [김진](https://www.notion.so/2582e9a3290281498debd7b6434201f2?source=copy_link) | [배창민](https://www.notion.so/2582e9a3290281e8a52ae75fd10a5845?source=copy_link) | [최지원](https://www.notion.so/2582e9a32902817dafe5c9370e79344f?source=copy_link) |
+|---|---|---|---|---|
+|![김동리](https://github.com/user-attachments/assets/bf4db010-0943-433a-820b-65a1c3888a1b)|![김민주](https://github.com/user-attachments/assets/8ec28881-2665-4e24-933b-86e59512e12a)|![김진](https://github.com/user-attachments/assets/007200ec-248f-4259-aa38-2b0c66ea06a3)|![배창민](https://github.com/user-attachments/assets/8de5ee2e-4860-41ce-8a31-28eabb98cdef)|![최지원](https://github.com/user-attachments/assets/6ffdfdbb-1b73-4db3-9414-51be09a966f8)|
+
+
+
+
+
+
 <br>
 
 
@@ -279,7 +283,11 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 <details>
   <summary>💰포인트</summary>
+<details>
+  <summary>¹포인트 조회</summary>
+<img width="1295" height="597" alt="포인트" src="https://github.com/user-attachments/assets/6a5275d5-6d07-48d9-8356-77321e52d26a" />
 
+</details>
 
 </details>
 
@@ -703,13 +711,14 @@ Dugout은 한국 프로야구 팬들을 위한 참여형 커뮤니티 플랫폼�
 
 ### 프로젝트 진행 후 회고
 
-| 조원명 | 소감문 |
+| 조원명 | 소감문 | 
 |--------|--------|
-| 김동리| 프로젝트 재미있게 진행했습니다. |
-| 김민주 | 많이 배우고 성장할 수 있었습니다. |
-| 김진 | 팀워크가 정말 좋았습니다. |
-| 배창민 | 프로젝트 재미있게 진행했습니다. |
+| 김동리| 프로젝트의 진행이 효율적으로 진행되어 팀워크가 좋았다고 생각합니다. 데이터베이스 구축은 처음 해봐서 많이 배우고 성장하는 시간이었습니다.각자 다른 백그라운드를 가진 사람들과 서로 배려하고  협업하는 시간이었다고 생각합니다.팀원분들께 감사드립니다. |
+| 김민주 |비전공자로서 첫 프로젝트를 진행하다 보니 부족한 점이 많았지만, 좋은 팀원들을 만나 많은 도움을 받으며 한 단계 성장할 수 있었습니다. 이론으로만 알고 있던 데이터베이스를 실제 프로젝트에서 직접 쿼리문을 작성하고 구현해 보면서, 이해하지 못했던 부분들을 더 깊이 익힐 수 있었습니다. 짧은 기간이었지만 팀원들과 함께 프로젝트를 수행하며 즐겁고 뜻깊은 경험을 쌓을 수 있었습니다. |
+| 김진 | 비전공자로서 처음 진행하는 프로젝트라 기대감도, 두려움도 많았지만 좋은 팀원들이 이끌어준 덕분에 잘 해낼 수 있던 것 같습니다. 이론적으로는 복습을 해도 어려움이 많았지만 프로젝트를 진행하며 직접 경험해보니 이론적인 부분을 좀 더 내 것으로 만들 수 있어서 좋았던 것 같습니다. 프로젝트를 진행하며 부족한 부분도 많이 느꼈고 주어진 시간 탓에 본인의 능력으로 해결하지 못한 부분에 대한 아쉬움이 남지만 이 아쉬움을 밑거름 삼아 매번 더 성장할 수 있도록 노력하겠습니다. 부족한 저를 이끌어주며 많은 도움을 준 팀원들에게 감사드립니다. |
+| 배창민 | 오랜만에 하는 팀 프로젝트 활동이라 걱정이 많았는데, 좋은 팀원분들을 만나서 무사히 프로젝트를 끝낸것 같습니다. DB 기반 기술 프로젝트는 처음 시작하기 전에는 그래도 크게 어려운 점은 없지 않을까? 싶었지만 프로젝트를 진행해나가면서 생각하지 못했던 트러블 등을 겪고 해결하고 보니 생각보다 힘들었던 것 같습니다. 하지만, 오랜만에 요구사항 명세서, UML과 ERD까지 거치며 sql 구문 등을 작성하며 팀원 들끼리 소통하면서 하니 즐겁게 끝까지 할 수 있었던것 같습니다. 모두 고생 많으셨습니다! |
 | 최지원 | 많이 배우고 성장할 수 있었습니다. |
+
 
 
 
